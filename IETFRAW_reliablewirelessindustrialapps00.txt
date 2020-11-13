@@ -1,0 +1,416 @@
+
+Requirements for Reliable Wireless Industrial Services
+draft-sofia-raw-requirementsindustrial-00.txt
+Status of this Memo
+This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79. 
+Internet-Drafts are working documents of the Internet Engineering Task Force (IETF), its areas, and its working groups.  Note that other groups may also distribute working documents as Internet-Drafts.
+Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."
+The list of current Internet-Drafts can be accessed at http://www.ietf.org/ietf/1id-abstracts.txt
+The list of Internet-Draft Shadow Directories can be accessed at http://www.ietf.org/shadow.html
+This Internet-Draft will expire on March 30th 2021.
+Copyright Notice
+Copyright (c) 2020 IETF Trust and the persons identified as the document authors. All rights reserved.
+This document is subject to BCP 78 and the IETF Trust?s Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document. Please review these documents carefully, as they describe your rights and restrictions with respect to this document. Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.
+Abstract
+This document provides an overview on communication requirements for handling reliable wireless services within the context of industrial environments. The goal of the draft is to bring awareness to requirements of current and future wireless industrial services; how can they co-exist with wired infrastructures; key drivers for reliable wireless integration; relevant communication requirements to take into consideration; current and future challenges.
+Table of Contents
+
+1. Introduction	3
+2. Conventions used in this document	4
+3. Definitions	4
+4. Wireless Industrial Services Today	4
+4.1. Equipment and Process Control Services	5
+4.2. Quality supervision Services	7
+4.3. Factory resource management Services	7
+4.4. Display Services	8
+4.5. Human Safety Services	9
+4.6. Mobile Robotics Services	9
+4.7. Power Grid Control	10
+4.8. Aeronautics Wireless Networking Services	10
+5. Future Reliable Wireless Industrial Services	11
+5.1. AR/VR Services within Flexible Factories	11
+5.1.1. Description	11
+5.1.2. Future Operation Aspects	11
+5.1.3. Requirements Considerations	12
+5.2. Decentralised Shop-floor Communication Services	12
+5.2.1. Description	12
+5.2.2. Future Operation Aspects	13
+5.2.3. Requirements Considerations	13
+5.3. Wireless Avionics Intra-communication (WAIC)	14
+5.3.1. Description	14
+5.3.2. Future Operation Aspects	14
+5.3.3. Requirements Considerations	15
+6. Security Considerations	15
+7. IANA Considerations	15
+8. Acknowledgments	16
+9. Informative References	16
+
+1.  Introduction
+Within industrial domains, wireless is gaining prominence as is an increasing need for flexibility both in terms of infrastructure layout, and processes, and the possibility to integrate wireless into industrial environments brings in a high level of expectation.
+Wireless, and specifically Wi-Fi, is now reaching a maturity point where the available transmission rates become highly competitive in comparison to wired environments, thus increasing flexibility, providing a lower cost and higher availability in scenarios requiring, for instance, mobility support.
+There are, nonetheless, barriers to the integration of wireless in industrial environments. Firstly, the medium is shared, thus raising issues concerning critical services availability, resilience, and security support. Secondly, wireless relies on probabilistic Quality of Service (QoS) and therefore requires tuning to be able to support time-sensitive traffic with bounded latency, low jitter, zero congestion loss. The advancements of the IEEE 802.11 standards, namely, 802.11ax and 802.11be and the fact that OFDMA-based wireless brings in a higher degree of flexibility in terms of resource management, provides the means to better support traffic in converged networks.
+Being able to address the communication challenges that exist in industrial domains require a better understanding of communication requirements that the existing and future industrial applications may attain.
+The focus of this draft is on discussing industrial application requirements, currently and for the future and, in particular, how to best support time-sensitive applications within industrial converged networks. For that purpose, the draft debates on wireless industrial applications  collected from related normative and informational references on the industrial domain; debates on key drivers for the integration of wireless; debates on specific wireless mechanisms that may assist such integration and challenges thereof; and elaborates on specific requirements to observe.
+
+2.  Conventions used in this document
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 [RFC2119]. 
+In this document, these words will appear with that interpretation   only when in ALL CAPS. Lower case uses of these words are not to be    interpreted as carrying significance described in RFC 2119.
+3.  Definitions
+
+4.  Wireless Industrial Services Today
+This section describes industrial applications where IEEE 802.11 is already being applied, derived from an analysis of related work.
+
+Industrial wireless services focused on the strengthening of industrial manufacturing environments have been intensively documented via the IEEE Nendica group [NENDICA], the Internet Industrial Consortium [IIC], the OPC FLC working group [OPC FLC].
+The IEEE Nendica 2020 report [NENDICA] comprises several end-to-end use-cases and a technical analysis of the identified features and functions supported via wireless/wired deterministic environments. Based on surveys to industry, the report provides a first characterization of wireless services in factories (Wi-Fi 5), characterizing the scenarios in terms of aspects such as as payload size in bytes, communication rate, arrival time tolerance, node density. 
+The IEEE 802.11 RTA report ([IEEERTA], 2018) provides additional input concerning the support of wireless for time-sensitive and real-time applications. For each category of application, the report provides a description, basic information concerning topology and packet flow/traffic model, summarizing the problem statement (main challenges). The industrial applications in this report are a subset and have also considered sources such as IEEE Nendica, IEC/IEEE 60802 Use-cases, as well as 3GPP TR 22.804. The report aggregates the different services in 3 classes (A,B,C) and provides communication requirements for each class as: bounded latency (worst-case one-way latency measured at the application layer); reliability (defined as the percentage of packets expected to be received within the latency bound); time synchronization needs (in the order of micro/milliseconds); throughput needs (high, moderate, low).  The report concludes with guidelines concerning implementation aspects, e.g., traffic classification aspects and new capabilities to support real-time applications.
+The Avnu Alliance provides a white paper describing steps for the integration of TSN over WiFi [19], briefly describing a few use-cases derived from other sources, such as: closed loop control, mobile robots, power grid control, professional AV, gaming, AR/VR. The document also raises awareness to the possibility of wireless replacing or being complementary to wired within connected cabines, i.e., in regards to the wiring harness within vehicles (cars, airplanes, trains), which are currently expensive and which require a complex onboarding. Wireless can assist in lowering the costs, if it can be adapted to the critical latency, safety requirements and regulations. Such cases would require 100 micosecond level cycles, according to Avnu. The communication requirements are summarised in terms of whether or not IEEE 1588 synchronisation is required; the typical packet size (data payload); bounded latency; reliability.
+Manufacturing wireless use-cases have also been debated in the context of 5G ACIA, NICT, and IETF Deterministic Networking (IETF DetNet, 2019) [25]. These sources provide an overview on user stories, and debate on the challenges brought by the integration of wireless. However, communication requirements are not presented in a systematic way. Last, the IETF RAW working group has an active draft which provides an initial overview on the challenges of wireless industrial applications [23]. 
+Based on the different sources and use-cases, in this section a description of different applications, and respective communication requirements is provided.
+
+4.1.  Equipment and Process Control Services
+This category of application refers to the data exchange required to send commands to mobile robots/vehicles, production equipment, and also to receive status information. Reasons for wireless integration concern: flexibility of deployment, reconfigurability, mobility, maintenance cost reduction
+The following applications and requirements are provided:
+* Control of machines and robots.
+o Bounded latency: below 10 ms.
+o Periodic
+o Transmit data size (bytes): 10-400 (small)
+o Tolerance to packet loss: 0
+o Time synchronization: IEEE 1588
+o Node density: 1 to 20 (per 20mx20m area)
+
+* AGVs with rails
+o Bounded latency: 10 ms-100ms.
+o Periodic, once per minute
+o Transmit data size (bytes): 10-400 (small)
+o Tolerance to packet loss: 0
+o Time synchronization: IEEE 1588
+o Node density: 1 to 20 (per 20mx20m area)
+
+* AGVs without rails
+o Bounded latency:1s
+o Periodic, once per minute
+o Transmit data size (bytes): 10-400 (small)
+o Tolerance to packet loss: 0
+o Time synchronization: IEEE 1588
+o Node density: 1 to 20 (per 20mx20m area)
+
+* Hard-real time isochronous control, motion control
+o Bounded latency: 250us - 1ms
+o Periodic
+o Transmit data size (bytes): 10-400 (small)
+o Tolerance to packet loss: 0
+o Time synchronization: IEEE 1588
+o Node density: 1 to 20 (per 20mx20m area)
+
+* Printing, packaging
+o Bounded latency: below 2 ms
+o Transmit data size (bytes): 10-400 (small)
+o Tolerance to packet loss: 0
+o Time synchronization: IEEE 1588
+o Node density: over 50 to 100
+
+* PLC to PLC communication
+o Bounded latency: 100 us-50 ms
+o Transmit data size (bytes): 100-700 
+o Tolerance to packet loss: 0
+o Time synchronization: IEEE 1588
+
+* Interactive video
+o Bounded latency: 50 -10 ms
+o Time synchronization: 10-1æs
+
+* Mobile robotics
+o Bounded latency: 50 -10 ms
+
+* AR/VR, remote HMI
+o Bounded latency: 10 ? 1 ms
+o Time synchronization: ~1 æs
+o Time synchronization: 10-1æs
+
+* Machine, production line controls
+o Bounded latency: 10 ? 1 ms
+4.2.  Quality supervision Services
+Refers to collecting information related to products and states of machines during production. Reasons for wireless integration concern: flexibility of deployment, maintenance cost reduction.
+The following applications and requirements are provided:
+* Inline inspection
+o Bounded latency: bellow 10ms
+o Time synchronization: 10-1æs
+o Periodic, once per second
+o Transmit data size (bytes): 64-1M
+o Tolerance to packet loss: 0
+o Node density: 1-10 (per 20mx20m)
+
+* Machine operation recording
+o Bounded latency: over 100 s
+o Time synchronization: 10-1æs
+o Periodic, once per second
+o Transmit data size (bytes): 64-1M
+o Tolerance to packet loss: 0
+o Node density: 1-10 (per 20mx20m)
+
+* Logging
+o Bounded latency: over 100s
+o Time synchronization: 10-1æs
+o Transmit data size (bytes): 64-1M
+o Tolerance to packet loss: 0
+o Node density: 1-10 (per 20mx20m)
+4.3.  Factory resource management Services
+Refers to capturing information about whether production is proceeding under proper environmental conditions, and whether staff and devices contributing to productivity enhancement are being managed appropriately. Reasons for wireless integration concern: Flexibility of deployment, reconfigurability, maintenance cost reduction. Applications described are:
+* Machine monitoring
+o Bounded latency: 100ms-10s
+o Periodic
+o Time synchronization: 10-1æs
+o Transmit data size (bytes): 10-10M
+o Tolerance to packet loss: 0
+o Node density: 1-30
+
+* Preventive maintenance
+o Bounded latency: over 100ms
+o Periodic, once per event.
+
+* Positioning, motion analysis
+o Bounded latency: 50ms-10s
+o Periodic, once per second.
+* Inventory control
+o Bounded latency: 50ms-10s
+o Periodic, once per second.
+
+* Facility control environment
+o Bounded latency: 1s-50s.
+o Periodic, once per minute.
+
+* Checking status of material, small equipment
+o Bounded latency: 100ms-1s
+o Sporadic, 1 to 10 times per 30 minutes.
+4.4.  Display Services
+Services targeting workers, allowing them to receive required support information, and for managers, in regards to monitoring of production status and processes. Reasons for wireless integration concern: Scalability, flexibility of deployment, mobility support.
+* Work commands, e.g., wearable displays
+o Bounded latency: 1-10s
+o Sporadic, once per 10s-1m
+o Transmit data size (bytes): 10-6K
+o Tolerance to packet loss: yes
+o Node density: 1-30
+* Display information
+o Bounded latency: 10s
+o Sporadic, once per hour.
+o Transmit data size (bytes): 10-6K
+o Tolerance to packet loss: yes
+o Node density: 1-30
+
+* Supporting maintenance (video, audio)
+o Bounded latency: 500ms
+o Sporadic, once per 100ms.
+o Transmit data size (bytes): 10-6K
+o Tolerance to packet loss: yes
+o Node density: 1-30
+4.5.  Human Safety Services
+Refers to applications that concern collecting data to infer about potential dangers to workers in industrial environments. The need for wireless integration concerns: support for pervasive deployment; mobility.
+* Detection of dangerous situations/operations
+o Bounded latency: 1s
+o Periodic, 10 per second (10 fps).
+o Transmit data size (bytes): 2-100K
+o Tolerance to packet loss: yes
+o Node density: 1-50
+
+* Vital sign monitoring, dangerous behaviour detection 
+o Bounded latency: 1s-50s
+o Periodic, once per m.
+o Transmit data size (bytes): 2-100K
+o Tolerance to packet loss: 0
+o Node density: 1-30
+4.6.  Mobile Robotics Services
+Refers to services that support the communication between robots, e.g., task sharing; guidance control including data processing, AV, alerts. Reasons to consider wireless integration are: the need to support mobility and reconfigurability.
+* Video operated remote control
+o Bounded latency: 10-100ms
+o Transmit data size (bytes): 15-150K
+o Tolerance to packet loss: yes
+o Node density: 2-100
+
+* Assembly of robots or milling machines
+o Bounded latency: 4-8ms
+o Transmit data size (bytes): 40-250
+o Tolerance to packet loss: yes
+o Node density: 2-100
+
+* Operation of mobile cranes
+o Bounded latency: 12ms
+o Periodic, once per 2-5ms
+o Transmit data size (bytes): 40-250
+o Tolerance to packet loss: yes
+o Node density: 2-100
+
+* Drone/UAV air monitoring
+o Bounded latency: 100ms
+o Tolerance to packet loss: yes
+4.7.  Power Grid Control
+Services that support communication links for predictive maintenance and to isolate faults on high voltage lines, transformers, reactors, etc.
+Reasons to integrate wireless concern: wire replacement maintenance cost reduction.
+o Bounded latency: 1-10ms
+o Transmit data size (bytes): 20-50
+o Time synchronization: IEEE 1588
+o Tolerance to packet loss: yes
+o Node density: 2-100
+
+4.8.  Aeronautics Wireless Networking Services
+o WAIC
+o 
+
+
+5.  Future Reliable Wireless Industrial Services
+5.1.  AR/VR Services within Flexible Factories
+5.1.1.  Description
+While Video is today integrated both into industrial automation systems, and also used with the shop-floor to assist the worker, the integration of AR/VR in the shop-floor in industrial environments is still in the beginning. It is, however, being applied within the electric industry as a way to improve productivity and safety of workers, also overlaying real-time metadata over equipment under maintenance or operation.
+In this context, it is important to ensure that the AR/AV traffic does not interfere with the critical traffic of the production system, i.e., performance characteristics like latency and jitter for the critical traffic shall be independent from disturbances.  Moreover, it is also important to provide the AR/VR application with low latency, also in the verge of mobility.
+5.1.2.  Future Operation Aspects
+The support of AR/AV in the context of remote maintenance environments is bound to increase within industrial environments, given the support that can be provided for maintenance and equipment operations. It is also relevant to consider its use within the context of worker safety and it can be foreseen that AV-based remote maintenance will further be provided also via mobile devices, with workers on the go. Wireless is therefore a key communication asset for this type of applications.  In terms of the converged network, AR/AV is a bandwidth intensive real-time application. It therefore requires specific handling (other than BE). Moreover, the AR/AV flows must not create disturbance due to the shared medium. 
+A third aspect concerns the fact that there will most likely be the need to support multiple AR/AV streams from different end-users within a single WLAN, thus increasing the need for traffic isolation. A fourth aspect concerns the fact that VR systems, if not adequately support, result in VR sickness. Specific network and non-network requirements have already been identified by IEEE 802, MPEG, 3GPP. Such requirements contemplate, for instance, support of higher frame rates, reducing the motion-to-photon latency, higher data transmission rates, low jitter, etc.
+5.1.3.  Requirements Considerations
+In such applications, to ensure minimum interference, a few aspects need to be ensured:
+? The AR/AV traffic needs to be isolated in order to prevent interference, i.e., it SHOULD have a specific CoS assigned. 
+? Between the STA and AP, there is the need to ensure that the AR/AV traffic is handled in a way that does not hinder critical traffic.
+? Low mobility SHOULD be supported. 
+? Multiple user support SHOULD be provided.
+? VR sickness MUST be prevented [IEEERTA].
+? A tight integration of the AR/VR systems with production systems SHOULD be address in way compatible with the deterministic wired infrastructure. 
+? A software-based mechanism on the AP SHOULD support an adequate mapping of CoS to the wireless QoS (e.g., EDCA UPs).
+? MAC layer contention MUST be mitigated for all STAs within the area (within the range of the same AP or not).
+
+Specific communication requirements:
+? Latency: 3-10ms [IEEERTA]
+? Bandwidth, 0.1-2Gbps [IEEERTA]
+? Data payload, over 4Kbytes [IEEERTA]
+
+5.2.  Decentralised Shop-floor Communication Services
+5.2.1.  Description
+The increasing automation of the shop-floor implies an increase in the number of nodes, including mobile nodes. Wireless is a key driver for scenarios involving mobile vehicles. NICT describes already production environments, in particular environments with elevated temperatures, where wireless communication is used to support safety of workers and to remotely monitor production status. Such environments comprise different applications (e.g., safety of workers, mobile robots, factory resource management) and debate on the interconnection of different wireless technologies and devices, from PLCs, to autonomous mobile robots, e.g., UAVs, AGVs. Wireless/wired integration mechanisms have also been debated in the cost of self-organizing production lines[DIETRICH2018]. Therefore, the notion of flexible and heterogeneous shop-floor communication is already present in industrial environments, based on hybrid wired/wireless systems and the integration of multi-AP environments.
+5.2.2.  Future Operation Aspects
+Prior related work debates on centralized communication architectures (infrastructure mode), and for this case, the issue of connectivity is usually circumvented via multiple AP coordination. Within the context of multi-AP coordination and assuming TDMA-based communication, a well-organized schedule can prevent collisions [FERN2019]. Hence, for this specific type of scenario, the main issue concerns handling handovers in a timely and precise way, capable of providing deterministic guarantees.  However, with an increase on the number of nodes on a shop-floor, connectivity issues become more complex. 
+Therefore, it is relevant to explore also the possibility of a ?decentralised? approach to shop-floor communication, considering both mobile and static nodes. In this case, both ad-hoc and infrastructure mode are expected to co-exist. Within the ad-hoc communication areas, there is control-based traffic integrated with sensing (critical, non-critical), with real-time traffic, as well as time-triggered traffic. Each node is responsible for managing its access to the medium, thus requiring a cooperative protocol approach.
+5.2.3.  Requirements Considerations
+In such environment, connectivity becomes more complex:
+? A wider variety of traffic profiles MUST be supported, thus increasing the management complexity.
+? Devices communicating via ad-hoc mode MUST integrate a collaborative communication approach, e.g., relaying, cluster-based scheduling approach.
+? Low mobility MUST be supported (e.g., up to 2 m/s within a BSS)
+? Multi-AP coordination MUST still be integrated.
+? Frequent handover MUST be supported, ideally with a make-before-break approach.
+? Neighbor detection and coverage problem detection MUST be implemented in ad-hoc nodes.
+
+5.3.  Wireless Avionics Intra-communication (WAIC)
+5.3.1.  Description
+Wireless integration is also relevant to industrial environments in the context of replacing cabling (rf. to Table 2 for specific use-cases in related work). Within the context of avionics [29], wireless intra-communications brings in the benefit of  lowering cabling installation costs and maintenance costs. Wireless Avionics Intra-communication (WAIC) systems are expected to significantly benefit of wireless integration, and determinism is a relevant aspect of WAIC systems [24], given the high criticality of these systems. Flight control systems, for instance, require high reliability and bounded latency to assist in estimating and controlling the state of the aircraft. Uncertain network performance may impact the real-time readings in the cockpit.
+Real-time data needs to be delivered with strict deadlines for most control systems. Moreover, WAIC systems integrate a large number of endpoints (sensors and actuators), and a large number of uplinks. Uplink reliability is a must to ensure adequate measurement. Downlink reliability has to be guaranteed to ensure adequate communication support between the backbone and wireless endpoints, thus requiring reliability both in UL and DL.
+5.3.2.  Future Operation Aspects
+WAIC systems are expected to integrate different wireless technologies. Low data rate applications have as strong candidates IEEE 802.15.4 and Bluetooth, even though the latter has not yet been certified for mission-critical applications. 
+For high data rate applications, WLAN-based industrial networks are a strong candidate, and 802.11ax, having been devised to operate between 1 and 7GHz (in addition to 2.4 GHz and 5GHz) brings in added flexibility. The current amendment takes already into consideration dense scenarios (in terms of APs and endpoints) within geographical limited regions.
+
+IEEE 802.11ax requires still some improvements to support real-time transmission and high data rate demands of WAIC applications in dense environments. In this context, OFDMA and the concept of spatial reuse is relevant, to assist large-scale simultaneous transmission, while at the same time preventing collision and interference, and guaranteeing high throughput [30].
+5.3.3.  Requirements Considerations
+? Deterministic guarantees both with LoS and nLoS. Several nodes of the WAIC class Low data rate Inside (LI) are in nLoS (hidden).
+? WAIC transceivers in the same compartments need to coordinate the frequencies (transmit in different frequencies).
+? Reliability uplink and downlink needs to be guaranteed to ensure adequate data transmission between the backbone and wireless nodes.
+
+Specific communication requirements:
+* Support between 125 to 4150 nodes [29].
+* Maximum distance between transmitter and receiver: 15m [29].
+* Aggregate average data rate of network (kbit/s): 394 to 18385 [29].
+* Latency: below 5s for High data rate Inside (HI) applications [29].
+* Jitter: below 50ms for HI applications [29].
+
+Specific communication requirements:
+? Latency: 20-40ms [PARK2020].
+? Packet payload: small (e.g., 50 bytes) and variable bit rate [PARK2020].
+
+6.  Security Considerations
+This document describes industrial application communication requirements for the integration of reliable Wi-Fi technologies. The different applications have security considerations which have been described in the respective sources [IEEERTA], [NICT], [IIC], [AVNU], [5GACIA]. 
+
+7.  IANA Considerations
+This document has no IANA actions.
+
+8.  Acknowledgments
+   The research leading to these results received funding from joint fortiss GmbH and Huawei project TSNWiFi (https://www.fortiss.org/en/research/projects/detail/tsnwifi)
+
+The authors would like to thank xxx, for their contributions and support to the current version of the draft.
+This document was prepared using 2-Word-v2.0.template.dot.
+
+9.  Informative References
+ [NENDICA] I. S. Industry Connections, ?INDUSTRY CONNECTIONS REPORT IEEE 802 Nendica Report: Flexible Factory IoT-Use Cases and Communication Requirements for Wired and Wireless Bridged Networks.?
+[IIC]	M. Linehan, ?Time Sensitive Networks for Flexible Manufacturing Testbed Characterization and Mapping of Converged Traffic Types.?
+[RFC8578] 	?RFC 8578 - Deterministic Networking Use Cases.? [Online]. Available: https://datatracker.ietf.org/doc/rfc8578/. 
+[AVNU2020]	S. Bush, ?Avnu Alliance© White Paper Wireless TSN-Definitions, Use Cases & Standards Roadmap,? 2020.
+[5GACIA]	5G-ACIA, ?5G for Connected Industries and Automation,? no. November, 2019.
+[NICT]	E. Edition and C. Technology, ?Wireless use cases and communication requirements in factories ( abridged edition ),? no. February, 2018.
+[IEB]	T. Journal and I. Networking, ?Using Ethernet & TSN for rail metro networks,? no. 113, 2019.
+ [IEEE80211-RTA] K. Meng, ?IEEE 802.11 Real Time Applications TIG Report.? IEEE, 2018.
+[IETFRAW-USECASES]
+[DIETRICH2018] S. Dietrich, G. May, J. von Hoyningen-Huene, A. Mueller, and G. Fohler, ?Frame Conversion Schemes for Cascaded Wired / Wireless Communication Networks of Factory Automation,? Mob. Networks Appl., vol. 23, no. 4, pp. 817?827, Aug. 2018.
+[FERN2019] Z. Fern ndez Ganzabal, ?Analysis of the Impact of Wireless Mobile Devices in Critical Industrial Applications,? no. May, 2019.
+[PARK2020] P. Park, P. Di Marco, J. Nah, and C. Fischione, ?Wireless Avionics Intra-Communications: A Survey of Benefits, Challenges, and Solutions,? pp. 1?24, 2020.
+[ITU2010] International Telecommunication Union, ?Technical characteristics and operational objectives for wireless avionics intra-communications,? Policy, vol. 2197, p. 58, 2010.
+
+
+Authors? Addresses
+Rute C. Sofia (Editor)
+   fortiss GmbH
+   Guerickestrasse 25
+   Munich  80805
+   Germany
+
+   Email: sofia@fortiss.org
+   
+   Mathias Kovatsch
+   Huawei
+   xxxx
+   Munich 
+   Germany
+
+   Email: kovatsch@huawei.com
+   
+   Paulo M. Mendes
+   Airbus
+   xxxx
+   Munich 
+   Germany
+
+   Email: xxxx
+
+
+
+
+
+
+
+
+
+
+
+
+Email: <Your email address>
+
+Internet-Draft	 draft-sofia-raw-requirementsindustrial-00	Sep, 2020
+
+
+
+
+Sofia et al.	Expires March 30th, 2020	[Page 3]
+
+
+
+
+Reliable and Available Wireless		R. C. Sofia,
+Internet Draft		fortiss GmbH
+Intended status: Informational		M. Kovatsch, 
+		Huawei Research
+		P. Mendes,
+		Airbus
+		Xxxxx,
+		Yyyyy
+Expires: April 30th, 2021		November 16th, 2020
+	
+
+
+
+
+
+Sofia	Expires March 30th, 2021	[Page 1]
+
+
