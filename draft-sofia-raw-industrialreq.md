@@ -1,7 +1,7 @@
 ---
 title: Requirements for Reliable Wireless Industrial Services
 docname: draft-sofia-raw-industrialreq-latest
-date: 2020-03-06
+date: 2021-03-03
 ipr: trust200902
 area: Routing
 wg: Reliable and Available Wireless Working Group
@@ -105,13 +105,6 @@ informative:
     org: NICT
    date: Feb 2018
 
-  IEB:
-   title: Using Ethernet & TSN for rail metro networks - Industrial Ethernet Book, J. Ind. Netw. IoT, no. 113
-   author:
-    ins: IEB
-    name: IEB
-   date: 2018
-
   IEEERTA:
    title: IEEE 802.11 Real Time Applications TIG Report
    author:
@@ -156,10 +149,6 @@ informative:
     name: Park, Pangun, et al.
    date: 2020
 
-  ITU2010:
-   title: International Telecommunication Union, Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58
-   date: 2010.
-
   BBN8436:
    title: Single pilot commercial aircraft operation. BBN Report.
    author:
@@ -202,13 +191,6 @@ Still, being able to address the communication challenges that exist in industri
 #Conventions used in this document
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 {{RFC2119}}.
 In this document, these words will appear with that interpretation   only when in ALL CAPS. Lower case uses of these words are not to be    interpreted as carrying significance described in RFC 2119.
-
-# Conventions used in this document
-
-The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this document are to be interpreted as described in RFC 2119.
-
-In this document, these words will appear with that interpretation only when in ALL CAPS. Lower case uses of these words are not to be interpreted as carrying significance described in RFC 2119.
-
 
 # Definitions
 
