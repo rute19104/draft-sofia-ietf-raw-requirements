@@ -66,11 +66,11 @@
     
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/12274121/ws?session=eyJ2IjoiVjMiLCJ1IjoxMjI3NDEyMSwicyI6NjU2NTg1NTk2LCJjIjozNzgwMDAzMzY2LCJ0IjoxNjE0Nzg5MDUzfQ==--cbb78303576087515ee7e2da4c1618319fc76eed5728dd1fbfe0e3b73cd7119e" data-refresh-url="/_alive">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/12274121/ws?session=eyJ2IjoiVjMiLCJ1IjoxMjI3NDEyMSwicyI6NjU2NTg1NTk2LCJjIjoxMDY4NzU0NzcwLCJ0IjoxNjE0NzkwNTU0fQ==--3557eb31a2ba070945ccd3c1981087dbbe51f1a23b90baa63087227d50d0c107" data-refresh-url="/_alive">
     <link rel="shared-web-socket-src" href="/socket-worker-5029ae85.js">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="6EC9:5699:C897D8:D251EB:603FB9AA" data-pjax-transient="true" /><meta name="html-safe-nonce" content="e360dd3a075c7f51bef22f0ef6bb348ef48fcf62712bb60eda61c9d121000070" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9tYXJ0aW50aG9tc29uL2ktZC10ZW1wbGF0ZS90cmVlL21haW4vZG9jIiwicmVxdWVzdF9pZCI6IjZFQzk6NTY5OTpDODk3RDg6RDI1MUVCOjYwM0ZCOUFBIiwidmlzaXRvcl9pZCI6IjM0MjYwMjExODgwMDkxNzkyOTkiLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="d05719c7f5ad46d0476aa1c583758ba22d9bc6d64481557ff89b01ee96ab9946" data-pjax-transient="true" />
+  <meta name="request-id" content="6EB4:0686:BF281E:C8E3D4:603FBF9A" data-pjax-transient="true" /><meta name="html-safe-nonce" content="e360dd3a075c7f51bef22f0ef6bb348ef48fcf62712bb60eda61c9d121000070" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9tYXJ0aW50aG9tc29uL2ktZC10ZW1wbGF0ZS90cmVlL21haW4vZG9jIiwicmVxdWVzdF9pZCI6IjZFQjQ6MDY4NjpCRjI4MUU6QzhFM0Q0OjYwM0ZCRjlBIiwidmlzaXRvcl9pZCI6IjM0MjYwMjExODgwMDkxNzkyOTkiLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="43d5b557d063f4cb1dc10e84565a92d7db44e4a3485a635e5bf994486c1585c8" data-pjax-transient="true" />
 
     <meta name="hovercard-subject-tag" content="repository:21056104" data-pjax-transient>
 
@@ -109,7 +109,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="ODdmZDRiMmNiYzVmMzI0ODExNTk3ZDA4ZGEyZmZmNWUyMDJmNmRhODU3NmU3OThhOTRmM2Q1ZjhkODJiYTlkY3x7InJlbW90ZV9hZGRyZXNzIjoiODcuMTIzLjIwMy40OCIsInJlcXVlc3RfaWQiOiI2RUM5OjU2OTk6Qzg5N0Q4OkQyNTFFQjo2MDNGQjlBQSIsInRpbWVzdGFtcCI6MTYxNDc4OTA1MywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+      <meta name="js-proxy-site-detection-payload" content="MWQ3NTk0MTNhNzUyZmY4ZTAxOGVlMDlmZjI4MzA2MWQ0ZmRlMWU2N2Y0MTQ0MGM1NjRlYTQ4MmZiODJlYTJhMHx7InJlbW90ZV9hZGRyZXNzIjoiODcuMTIzLjIwMy40OCIsInJlcXVlc3RfaWQiOiI2RUI0OjA2ODY6QkYyODFFOkM4RTNENDo2MDNGQkY5QSIsInRpbWVzdGFtcCI6MTYxNDc5MDU1NCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,JS_HTTP_CACHE_HEADERS">
 
@@ -198,7 +198,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" value="yN+1zQqpIH2Xo8a6OYf1/qh7gGcm8DKpwlktY7FbwFs7Hl+Io/3kjBzMoMWkXdLhRCr4kM4NuWndmPh4g0zNkA==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+          <input type="hidden" value="aNKsOvi+3tiUYAxqlwAYZLMkndAmcvaiOUNYZviI8JGbE0Z/UeoaKR8PahUK2j97X3XlJ86PfWImgo19yp/9Wg==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -386,7 +386,7 @@
       <img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/12274121?s=40&amp;v=4" width="20" height="20" alt="@rute19104" />
       rute19104
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="eqUxFEzOe3DUiCb2QE8gL6zx0hsu8MfweJCRSP+Oc7A9ZXFrWg/12qJ6F7za3JWes+VuWGwOBOd72hT216y89A==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="i0WTwQM5CoBEEl8AZoyQ5kHAhwb1yH6yDX0U1Ml7aabMhdO+FfiEKjLgbkr8HyVXXtQ7Rbc2vaUON5Fq4Vmm4g==" />
       <button type="submit" class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15 d-md-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
         Sign out
@@ -406,7 +406,7 @@
     <div class="Header-item mr-0 mr-md-3 flex-order-1 flex-md-order-none">
         
 
-    <notification-indicator class="js-socket-channel" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTIyNzQxMjEiLCJ0IjoxNjE0Nzg5MDUzfQ==--1bbe23eb98d357f3dd3623366c8307e8a56035c83474e0f599403dd7e2c500a3">
+    <notification-indicator class="js-socket-channel" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTIyNzQxMjEiLCJ0IjoxNjE0NzkwNTU0fQ==--07fe0587eb47cdb9bbe9b1349906d75cb18fa153dde251aea17e6acf3f809c6a">
       <a href="/notifications"
          class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
          
@@ -550,7 +550,7 @@
       </p>
       <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:21056104,&quot;originating_url&quot;:&quot;https://github.com/martinthomson/i-d-template/blob/main/doc/example.md&quot;,&quot;user_id&quot;:12274121}}" data-hydro-click-hmac="45132e728ca07e9045428a329f5c813e7bf94441ebe5881539adf2146e1f20c8" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
     </div>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="Zq/FMNLQHrlh2f35lMCyDJnxrCiuwBEoPUoMU8KqKTOmfVMIkPw3CLHu2JwGtz5yJq5hPxSGM6b/vx0wzaF8aA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="sJdnrf/XCiIcnEMVLGgl8ki2ExO+wm3iekdxS+diPixwRfGVvfsjk8yrZnC+H6mM9+neBASET2y4smAo6Glrdw==" />
       <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:21056104,&quot;originating_url&quot;:&quot;https://github.com/martinthomson/i-d-template/blob/main/doc/example.md&quot;,&quot;user_id&quot;:12274121}}" data-hydro-click-hmac="8c3925c4d0cd072a60079ba48f717a9e2437edbe34cb1a6bd961201c9dd97234">
         <svg aria-label="Hide this notice forever" class="octicon octicon-x v-align-text-top" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
 </button></form>  </div>
@@ -638,7 +638,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="UXsj+7JYQqv51UhPv9gFvz0gZte5hIIhnfpiFXTBRZb2YSP0tkk/zkKXaLFS9SoAC1qUlI4I3Fr01iGrSSjOGA==" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="d4XJ3PRoWxUawbb4ddHWRncPXhKoW53HTv8KODJkp2PQn8nT8HkmcKGDlgaY/Pn5QXWsUZ/Xw7wn00mGD40s7Q==" />
 
                 <input type="hidden" name="repository_id" value="21056104">
 
@@ -740,7 +740,7 @@
 
         <details-dialog class="notifications-component-dialog " data-target="notifications-list-subscription-form.customDialog" hidden>
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="i/ERczEPC3PwVGXI19qXDB/luDec4wZsJNA1E55DBhcs6xF8NR52FksWRTY697izKZ9KdKtvWBdN/Hato6qNmQ==" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="1g379+MCpKXBtX6XvaHgOYrCpuJI6YIW1cLKQi5NO9hxF/v45xPZwHr3XmlQjM+GvLhUoX9l3G287on8E6SwVg==" />
 
               <input type="hidden" name="repository_id" value="21056104">
 
@@ -876,7 +876,7 @@
 
   <li>
         <div class="d-block js-toggler-container js-social-container starring-container ">
-    <form class="starred js-social-form" action="/martinthomson/i-d-template/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="UhbsvVyDU3mXdNSNoTImc4+k7tcCpyQdf+zuvQb3WrQTUlxtkxe0fIF4fFHxyau8E9oRLt7+CcFS1d9G1Fb2hg==" />
+    <form class="starred js-social-form" action="/martinthomson/i-d-template/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="HfGvcbzDyZ+2cDqq3IQR1jCGgvYO6jCbogolB3iBA1hctR+hc1cumqB8knaMf5wZrPh9D9KzHUePMxT8qiCvag==" />
       <input type="hidden" name="context" value="repository">
       <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar martinthomson/i-d-template" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:21056104,&quot;originating_url&quot;:&quot;https://github.com/martinthomson/i-d-template/blob/main/doc/example.md&quot;,&quot;user_id&quot;:12274121}}" data-hydro-click-hmac="367239d72e9a229051b214a25bc0f9d8d508691283d1b9738a6bef5b32ac5e7b" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star-fill mr-1" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
         <span>
@@ -886,7 +886,7 @@
            106
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/martinthomson/i-d-template/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="EHqvLysk9D4drABGvhlc3EeYF6SPUfqkYz9L4PnGWDBNXYuGGKA3QzxnnwqmhVeiOyYVNijT59mLl/T2LqdmuQ==" />
+    <form class="unstarred js-social-form" action="/martinthomson/i-d-template/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="n7/hubRX8QJb/3IjxpHXLV33kvwb+3NQG1jgwbLy6KXCmMUQh9Myf3o07W/eDdxTIUmQbrx5bi3z8F/XZZPWLA==" />
       <input type="hidden" name="context" value="repository">
       <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star martinthomson/i-d-template" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:21056104,&quot;originating_url&quot;:&quot;https://github.com/martinthomson/i-d-template/blob/main/doc/example.md&quot;,&quot;user_id&quot;:12274121}}" data-hydro-click-hmac="6753a049171476de68b3f64a0477d1ed1fc423d05c8eba5cb1300b009b1a9fd3" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star mr-1" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
         <span>
@@ -1258,17 +1258,84 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      <include-fragment src="/martinthomson/i-d-template/contributors/main/doc/example.md" class="commit-loader">
-        <div class="Box-header Box-header--blue d-flex flex-items-center">
-          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
-          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
-        </div>
+      
+  <div class="Box-header Box-header--blue Details js-details-container">
+      <div class="d-flex flex-items-center">
+        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
+          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/martinthomson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/martinthomson"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/67641?s=48&amp;v=4" width="24" height="24" alt="@martinthomson" /></a>
+        </span>
+        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+          <div class="css-truncate css-truncate-overflow">
+            <a class="text-bold Link--primary" rel="author" data-hovercard-type="user" data-hovercard-url="/users/martinthomson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/martinthomson">martinthomson</a>
 
-        <div class="Box-body d-flex flex-items-center" >
-          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
-          <span class="color-text-danger h6 loader-error">Cannot retrieve contributors at this time</span>
+              <span>
+                <a data-pjax="true" title="Add a test" class="Link--secondary" href="/martinthomson/i-d-template/commit/05b4804d94ea948b74f3169cbba4d86458e28546">Add a test</a>
+              </span>
+          </div>
+
+
+          <span class="ml-2">
+            <include-fragment accept="text/fragment+html" src="/martinthomson/i-d-template/commit/05b4804d94ea948b74f3169cbba4d86458e28546/rollup?direction=e" class="d-inline"></include-fragment>
+          </span>
         </div>
-</include-fragment>    </div>
+        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-text-secondary no-wrap">
+          <span class="d-none d-md-inline">
+            <span>Latest commit</span>
+            <a class="text-small text-mono Link--secondary" href="/martinthomson/i-d-template/commit/05b4804d94ea948b74f3169cbba4d86458e28546" data-pjax>05b4804</a>
+            <span itemprop="dateModified"><relative-time datetime="2021-02-08T05:27:59Z" class="no-wrap">Feb 8, 2021</relative-time></span>
+          </span>
+
+          <a data-pjax href="/martinthomson/i-d-template/commits/main/doc/example.md" class="ml-3 no-wrap Link--primary no-underline">
+            <svg class="octicon octicon-history text-gray" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg>
+            <span class="d-none d-sm-inline">
+              <strong>History</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
+    <details class="details-reset details-overlay details-overlay-dark lh-default color-text-primary float-left mr-3" id="blob_contributors_box">
+      <summary class="Link--primary">
+        <svg class="octicon octicon-people text-gray" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path></svg>
+        <strong>2</strong>
+        
+        contributors
+      </summary>
+      <details-dialog
+        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
+        aria-label="Users who have contributed to this file"
+        src="/martinthomson/i-d-template/contributors-list/main/doc/example.md" preload>
+        <div class="Box-header">
+          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+            <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+          </button>
+          <h3 class="Box-title">
+            Users who have contributed to this file
+          </h3>
+        </div>
+        <include-fragment>
+          <svg style="box-sizing: content-box; color: var(--color-icon-primary);" viewBox="0 0 16 16" fill="none" width="32" height="32" class="my-3 mx-auto d-block">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke">
+    <animateTransform attributeName="transform" type="rotate" from="0 8 8" to="360 8 8" dur="1s" repeatCount="indefinite" />
+  </path>
+</svg>
+        </include-fragment>
+      </details-dialog>
+    </details>
+      <span class="">
+    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/martinthomson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/martinthomson/i-d-template/commits/main/doc/example.md?author=martinthomson">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/67641?s=48&amp;v=4" width="24" height="24" alt="@martinthomson" /> 
+</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/ekr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/martinthomson/i-d-template/commits/main/doc/example.md?author=ekr">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/1111457?s=48&amp;v=4" width="24" height="24" alt="@ekr" /> 
+</a>
+</span>
+
+  </div>
+    </div>
 
 
 
@@ -1303,13 +1370,13 @@
               <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path></svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/martinthomson/i-d-template/edit/main/doc/example.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Zx106rqSXUFpYG3vt46wEIKcjQ5WD9Jfg69dN9wfELNGi3IJcQFpsUyqtJRIt1kH1+A3LDskxCbO6bWZkDZPKw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/martinthomson/i-d-template/edit/main/doc/example.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="MadQ/9g/3buiIL9l3aaalV/HtaHHRLSs8cBzwLzYBhcQMVYcE6zpS4fqZh4in3OCCrsPg6pvotW8hptu8PFZjw==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
               <svg class="octicon octicon-pencil" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/martinthomson/i-d-template/delete/main/doc/example.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ChK9brD8FhgT41e/lsUkDEdSKODNW0K+3n7O9JC7u3HR7bvtAwFpTuWkzKjGDDDfcLEvRJ/0cBZPE2QdGd/C0w==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/martinthomson/i-d-template/delete/main/doc/example.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="uRfuGcK/pQP5V8gxkz3lmRJWE61ewVSwf4WIj3AFx45i6OiacULaVQ8QUybD9PFKJbUUCQxuZhju6CJm+WG+LA==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and delete the file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"></path></svg>
@@ -1322,27 +1389,27 @@
   <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
     <article class="markdown-body entry-content container-lg" itemprop="text"><hr>
 <p>title: "Requirements for Reliable Wireless Industrial Services"
-abbrev: "draft-sofia-raw-requirementsindustrial-00"
-docname: draft-sofia-raw-requirementsindustrial-00
+abbrev: "TODO - Abbreviation"
+docname: draft-sofia-raw-requirementsindustrial-00 
 category: info</p>
 <p>ipr: trust200902
-area: Routing Area (rtg) 
-workgroup: Reliable and Available Wireless WG
+area: General
+workgroup: TODO Working Group
 keyword: Internet-Draft</p>
 <p>stand_alone: yes
 smart_quotes: no
 pi: [toc, sortrefs, symrefs]</p>
 <h2><a id="user-content-author" class="anchor" aria-hidden="true" href="#author"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>author:</h2>
-<pre><code>ins: R. C. Sofia 
-name: Rute C. Sofia
-organization: fortiss GmbH 
-email: sofia@fortiss.org
+<pre><code>ins: H. Tschofenig
+name: Hannes Tschofenig
+organization: Arm Limited
+email: hannes.tschofenig@arm.com
 </code></pre>
 <p>normative:
 RFC2119:</p>
 <p>informative:</p>
 <p>--- abstract</p>
-<p>This document provides an overview on communication requirements for handling reliable wireless services within the context of industrial environments. The goal of the draft is to bring awareness to communication requirements of current and future wireless industrial services; how can they co-exist with wired infrastructures; key drivers for reliable wireless integration; relevant communication requirements to take into consideration; current and future challenges derived from the use of wireless.</p>
+<p>TODO Abstract</p>
 <p>--- middle</p>
 <h1><a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Introduction</h1>
 <p>TODO Introduction</p>
