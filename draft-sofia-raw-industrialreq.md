@@ -6,74 +6,77 @@ ipr: trust200902
 area: Routing
 wg: Reliable and Available Wireless Working Group
 kw: Internet-Draft
-toc: yes
-sortrefs: yes
+#toc: yes
+#sortrefs: yes
 author:
   - 
-    ins: R. C. Sofia 
-    name: Rute C. Sofia
-    org: sofia@fortiss.org
-    street: Guerickestr. 25
-    city: Munich 
-    code: 80805
-    country: Germany
-    email: sofia@fortiss.org
+   ins: R. C. Sofia 
+   name: Rute C. Sofia
+   org: fortiss GmbH
+   street: Guerickestr. 25
+   city: Munich 
+   code: 80805
+   country: Germany
+   email: sofia@fortiss.org
   -       
-    ins: M. Kovatsch
-    name: Matthias Kovatsch
-    org: Huawei Technologies 
-    street: Riesstr. 25 C, 3.0G
-    city: Munich 
-    code: 80992
-    country: Germany
-    email: ietf@kovatsch.net 
+   ins: M. Kovatsch
+   name: Matthias Kovatsch
+   org: Huawei Technologies 
+   street: Riesstr. 25 C, 3.0G
+   city: Munich 
+   code: 80992
+   country: Germany
+   email: ietf@kovatsch.net 
   - 
-    ins: P. Mendes
-    name: Paulo Milheiro Mendes
-    org: Airbus
-    street: Willy-Messerschmitt Strasse 1
-    city: Munich 
-    code: 81663
-    country: Germany
-    email: paulo.mendes@airbus.com 
+   ins: P. Mendes
+   name: Paulo Milheiro Mendes
+   org: Airbus
+   street: Willy-Messerschmitt Strasse 1
+   city: Munich 
+   code: 81663
+   country: Germany
+   email: paulo.mendes@airbus.com 
 
-normative:  
-RFC2119:
+normative:
+#        - rfc2119
+#        - rfc2616
+#        - I-D.ietf-core-coap
+  RFC2119:
+  RFC2616:
+  I-D.ietf-core-coap:
+
 informative:
-NENDICA:
-   title: IEEE 802 Nendica Report, Flexible Factory IoT-Use Cases and Communication Requirements for Wired and Wireless Bridged Networks
-   author:
-     ins: N. Zein, Nader (Editor)
+  NENDICA:
+    title: IEEE 802 Nendica Report, Flexible Factory IoT-Use Cases and Communication Requirements for Wired and Wireless Bridged Networks
+    author:
+     ins: N. Zein, Ed
      name: Nader Zein
-   date: 2020
-IIC:
-  title: Time Sensitive Networks for Flexible Manufacturing Testbed Characterization and Mapping of Converged Traffic Types
-  author:
+    date: 2020
+
+  IIC:
+    title: Time Sensitive Networks for Flexible Manufacturing Testbed Characterization and Mapping of Converged Traffic Types
+    author:
      ins: M. Linehan
      name: M. Linehan
-  date: 2020
-RFC8578:
-   target: https://datatracker.ietf.org/doc/rfc8578/.
-   title: Deterministic Networking Use Cases.IETF RFC 8578 (Informational)
-   author:
-     ins: E. Grossman
-     name: E. Grossman
-   date: May 2019
+    date: 2020
 
-AVIONICS:
-   title: Wireless Avionics Intra-Communications, A Survey of Benefits, Challenges, and Solutions, pp. 1–24
-   author:
+  RFC8578:
+
+  AVIONICS:
+    title: Wireless Avionics Intra-Communications, A Survey of Benefits, Challenges, and Solutions, pp. 1–24
+    author:
      ins: P. Park, P. Di Marco, J. Nah, and C. Fischione
      name: P. Park, P. Di Marco, J. Nah, and C. Fischione
-   date: 2020
-ROBOTS1:
+    date: 2020
+
+  ROBOTS1:
    title: Flexible Wi-Fi Communication among Mobile Robots in Indoor Industrial Environments, Mob. Inf. Syst. 
    author:
       ins: J. Haxhibeqiri, E. A. Jarchlo, I. Moerman, and J. Hoebeke
       name: J. Haxhibeqiri, E. A. Jarchlo, I. Moerman, and J. Hoebeke
    date: 2018
 
-WAIC:
+  WAIC:
    title: Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58,
    author:
       ins: 
@@ -81,101 +84,98 @@ WAIC:
       org: International Telecommunication Union
    date: 2010.
 
-AVNU2020:
+  AVNU2020:
    title: Avnu Alliance White Paper Wireless TSN-Definitions, Use Cases & Standards Roadmap
    author:
       ins: S. Bush
       name: S. Bush
       org: Avnu Alliance
-      date: 2020
+   date: 2020
 
-5GACIA:
+  5GACIA:
    title: 5G for Connected Industries and Automation
    author:
      ins: 5G ACIA
      name: 5G ACIA 
    date: November 2019 
 
-NICT:
-  title: Wireless use cases and communication requirements in factories ( abridged edition ), Flex. Factories Proj
-  author:
+  NICT:
+   title: Wireless use cases and communication requirements in factories ( abridged edition ), Flex. Factories Proj
+   author:
     ins:
     name:
     org: NICT
-  date: Feb 2018
+   date: Feb 2018
 
-IEB:
-  title: Using Ethernet & TSN for rail metro networks - Industrial Ethernet Book, J. Ind. Netw. IoT, no. 113
-  author:
+  IEB:
+   title: Using Ethernet & TSN for rail metro networks - Industrial Ethernet Book, J. Ind. Netw. IoT, no. 113
+   author:
     ins: IEB
     name: IEB
-  date: 2018
+   date: 2018
 
-IEEERTA: 
-  title: IEEE 802.11 Real Time Applications TIG Report
-  author:
+  IEEERTA: 
+   title: IEEE 802.11 Real Time Applications TIG Report
+   author:
     ins: K. Meng
     name: K. Meng
-  date: 2018
+   date: 2018
 
-IETFRAW-USECASES: 
-  target: https://datatracker.ietf.org/doc/draft-ietf-raw-use-cases/
-  title: RAW use cases,” IETF draft - RAW working group
-  author: 
+  IETFRAW-USECASES: 
+   target: https://datatracker.ietf.org/doc/draft-ietf-raw-use-cases/
+   title: RAW use cases,” IETF draft - RAW working group
+   author: 
     ins:
     name: G. Papadopoulos, P. Thubert, F. Theoleyre, and C. Bernardos
-  date: 2020
+   date: 2020
 
-OPC FLC: 
-  target: https://opcfoundation.org/flc/
-  title: OPC Foundation Field Level Communications (FLC) Initiative 
-  author:
+  OPC FLC: 
+   target: https://opcfoundation.org/flc/
+   title: OPC Foundation Field Level Communications (FLC) Initiative 
+   author:
     ins:
     name:
-  date: accessed September 2020
+   date: accessed September 2020
 
-DIETRICH2018:
-  title: Frame conversion schemes for cascaded wired/wireless communication networks of factory automation, Mobile Networks and Applications, 23(4), 817-827
-  author:
+  DIETRICH2018:
+   title: Frame conversion schemes for cascaded wired/wireless communication networks of factory automation, Mobile Networks and Applications, 23(4), 817-827
+   author:
     ins: Dietrich, S., May, G., von Hoyningen-Huene, J., Mueller, A., & Fohler, G.
     name: Dietrich, S., May, G., von Hoyningen-Huene, J., Mueller, A., & Fohler, G.
-  date: 2018
+   date: 2018
   
-FERN2019:
-  title: Analysis of the Impact of Wireless Mobile Devices in Critical Industrial Applications
-  author:
+  FERN2019:
+   title: Analysis of the Impact of Wireless Mobile Devices in Critical Industrial Applications
+   author:
     ins: Z. Fernández Ganzabal
     name: Z. Fernández Ganzabal 
-  date: May, 2019
+   date: May, 2019
 
-PARK2020:
-  title: Wireless Avionics Intra-Communications, A Survey of Benefits, Challenges, and Solutions. IEEE Internet of Things Journal
-  author:
+  PARK2020:
+   title: Wireless Avionics Intra-Communications, A Survey of Benefits, Challenges, and Solutions. IEEE Internet of Things Journal
+   author:
     ins: Park, Pangun, et al.
     name: Park, Pangun, et al.
-  date: 2020
+   date: 2020
 
-ITU2010:
-  title: International Telecommunication Union, Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58 
-  date: 2010.
+  ITU2010:
+   title: International Telecommunication Union, Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58 
+   date: 2010.
 
-BBN8436:
-  title: Single pilot commercial aircraft operation. BBN Report.
-  author:
+  BBN8436:
+   title: Single pilot commercial aircraft operation. BBN Report.
+   author:
     ins: Deutsch, Stephen, and Richard W. Pew.
     name:
     org: BBN Technologies, Cambridge, MA, USA
-  date: 2005
+   date: 2005
 
-UAM18:
-  title: A performance benchmark of recent personal air vehicle concepts for urban air mobility.  Proceedings of the 31st Congress of the International Council of the Aeronautical Sciences, Belo Horizonte, Brazil
-  author:
+  UAM18:
+   title: A performance benchmark of recent personal air vehicle concepts for urban air mobility.  Proceedings of the 31st Congress of the International Council of the Aeronautical Sciences, Belo Horizonte, Brazil
+   author:
     ins: Shamiyeh, Michael, Raoul Rothfeld, and Mirko Hornung
     name: Shamiyeh, Michael, Raoul Rothfeld, and Mirko Hornung
-  date: 2018
-
-
-
+   date: 2018
 
 
 
@@ -202,7 +202,7 @@ There are, nonetheless, barriers to the integration of wireless in industrial en
 Still, being able to address the communication challenges that exist in industrial domains require a better understanding of communication requirements that the existing and future industrial applications may attain. Hence, the focus of this draft is on discussing industrial application requirements, currently and for the future and how to best support time-sensitive applications and services within industrial converged networks. For that purpose, the draft debates on wireless industrial services collected from related normative and informational references on the industrial domain; debates on key drivers for the integration of wireless; debates on specific wireless mechanisms that may assist such integration and challenges thereof; and elaborates on specific requirements to observe both for current wireless services as well as for a subset of future industrial wireless services.
 
 #Conventions used in this document
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 {{?RFC2119}}. 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 {{RFC2119}}. 
 In this document, these words will appear with that interpretation   only when in ALL CAPS. Lower case uses of these words are not to be    interpreted as carrying significance described in RFC 2119.
 
 # Conventions used in this document
@@ -215,6 +215,7 @@ In this document, these words will appear with that interpretation only when in 
 # Definitions
 
 * Latency (aka bounded latency), concerns the end-to-end transmission delay between a transmitter and a receiver, when a traffic flow is triggered by an application. By definition, latency corresponds to the time interval between sending the first packet of a flow from a source to a destination, until the instant of reception of the last packet of that flow. 
+
 * Periodicity stands for whether or not the data transmission is executed in a periodic fashion and whenever possible, the specific periodicity per unit of time has been specified. 
 
 * "Transmit data size” corresponds to the data payload in bytes.
@@ -229,16 +230,17 @@ In this document, these words will appear with that interpretation only when in 
 
 This section describes industrial applications where IEEE 802.11 is already being applied, derived from an analysis of related work.
 
-Industrial wireless services focused on the strengthening of industrial manufacturing environments have been intensively documented via the IEEE Nendica group {{?NENDICA}}, the Internet Industrial Consortium {{?IIC}}, the OPC FLC working group {{?OPC FLC}}.
-The IEEE Nendica 2020 report {{?NENDICA}} comprises several end-to-end use-cases and a technical analysis of the identified features and functions supported via wireless/wired deterministic environments. Based on surveys to industry, the report provides a first characterization of wireless services in factories (Wi-Fi 5), characterizing the scenarios in terms of aspects such as as payload size in bytes, communication rate, arrival time tolerance, node density.
+Industrial wireless services focused on the strengthening of industrial manufacturing environments have been intensively documented via the IEEE Nendica group {{NENDICA}}, the Internet Industrial Consortium {{IIC}}, the OPC FLC working group {{OPC FLC}}.
+The IEEE Nendica 2020 report {{NENDICA}} comprises several end-to-end use-cases and a technical analysis of the identified features and functions supported via wireless/wired deterministic environments. Based on surveys to industry, the report provides a first characterization of wireless services in factories (Wi-Fi 5), characterizing the scenarios in terms of aspects such as as payload size in bytes, communication rate, arrival time tolerance, node density.
 
-The IEEE 802.11 RTA report {{?IEEERTA}} provides additional input concerning the support of wireless for time-sensitive and real-time applications. For each category of application, the report provides a description, basic information concerning topology and packet flow/traffic model, summarizing the problem statement (main challenges). The industrial applications in this report are a subset and have also considered sources such as IEEE Nendica, IEC/IEEE 60802 Use-cases, as well as 3GPP TR 22.804. The report aggregates the different services in 3 classes (A,B,C) and provides communication requirements for each class categorized as: bounded latency (worst-case one-way latency measured at the application layer); reliability (defined as the percentage of packets expected to be received within the latency bound); time synchronization needs (in the order of micro/milliseconds); throughput needs (high, moderate, low). The report concludes with guidelines concerning implementation aspects, e.g., traffic classification aspects and new capabilities to support real-time applications.
+The IEEE 802.11 RTA report {{IEEERTA}} provides additional input concerning the support of wireless for time-sensitive and real-time applications. For each category of application, the report provides a description, basic information concerning topology and packet flow/traffic model, summarizing the problem statement (main challenges). The industrial applications in this report are a subset and have also considered sources such as IEEE Nendica, IEC/IEEE 60802 Use-cases, as well as 3GPP TR 22.804. The report aggregates the different services in 3 classes (A,B,C) and provides communication requirements for each class categorized as: bounded latency (worst-case one-way latency measured at the application layer); reliability (defined as the percentage of packets expected to be received within the latency bound); time synchronization needs (in the order of micro/milliseconds); throughput needs (high, moderate, low). The report concludes with guidelines concerning implementation aspects, e.g., traffic classification aspects and new capabilities to support real-time applications.
 
-	The Avnu Alliance provides a white paper describing steps for the integration of TSN over WiFi {{?AVNU2020}}, briefly describing the integration of Wi-Fi in specific applications such as: closed loop control, mobile robots, power grid control, professional Audio/Video, gaming, AR/VR. The document also raises awareness to the possibility of wireless replacing or being complementary to wired within connected cabines, i.e., in regards to the wiring harness within vehicles (cars, airplanes, trains), which are currently expensive and which require a complex onboarding. Wireless can assist in lowering the costs, if it can be adapted to the critical latency, safety requirements and regulations. Such cases would require 100 micosecond level cycles, according to Avnu. The communication requirements are summarised in terms of whether or not IEEE 1588 synchronisation is required; the typical packet size (data payload); bounded latency; reliability.
+The Avnu Alliance provides a white paper describing steps for the integration of TSN over WiFi {{AVNU2020}}, briefly describing the integration of Wi-Fi in specific applications such as: closed loop control, mobile robots, power grid control, professional Audio/Video, gaming, AR/VR. The document also raises awareness to the possibility of wireless replacing or being complementary to wired within connected cabines, i.e., in regards to the wiring harness within vehicles (cars, airplanes, trains), which are currently expensive and which require a complex onboarding. Wireless can assist in lowering the costs, if it can be adapted to the critical latency, safety requirements and regulations. Such cases would require 100 micosecond level cycles, according to Avnu. The communication requirements are summarised in terms of whether or not IEEE 1588 synchronisation is required; the typical packet size (data payload); bounded latency; reliability.
 
-	Manufacturing wireless use-cases have also been debated in the context of 5G ACIA {{?5GACIA}}, NICT {{?NICT}}, and IETF Deterministic Networking {{?RFC8578}}. These sources provide an overview on user stories, and debate on the challenges brought by the integration of wireless. However, communication requirements are not presented in a systematic way. Lastly, the IETF RAW working group has an active draft which provides an initial overview on the challenges of wireless industrial use-cases {{?IETFRAW-USECASES}}.
+Manufacturing wireless use-cases have also been debated in the context of 5G ACIA {{5GACIA}}, NICT {{NICT}}, and IETF Deterministic Networking {{RFC8578}}. These sources provide an overview on user stories, and debate on the challenges brought by the integration of wireless. However, communication requirements are not presented in a systematic way. Lastly, the IETF RAW working group has an active draft which provides an initial overview on the challenges of wireless industrial use-cases {{IETFRAW-USECASES}}.
 
 Derived from the analysis of the aforementioned sources, this section provides a description of categories of applications, and respective communication requirements. The following categories of applications are addressed:
+
 * Equipment and process control.
 * Quality supervision.
 * Factory resource management.
@@ -460,15 +462,15 @@ Refers to services that support the communication between robots, e.g., task sha
 
 Power grid control concerns services that support communication links for predictive maintenance and to isolate faults on high voltage lines, transformers, reactors, etc. Reasons to integrate wireless concern: wire replacement maintenance cost reduction.
 
-  * Bounded latency: 1-10ms.
-  * Transmit data size (bytes): 20-50.
-  * Time synchronization: IEEE 1588.
-  * Tolerance to packet loss: yes.
-  * Node density: 2-100.
+* Bounded latency: 1-10ms.
+* Transmit data size (bytes): 20-50.
+* Time synchronization: IEEE 1588.
+* Tolerance to packet loss: yes.
+* Node density: 2-100.
 
 ## Wireless Avionics Intra-communication
 
-Wireless integration is also relevant to industrial environments in the context of replacing cabling. Within the context of avionics {{?AVIONICS}}, _Wireless Avionics Intra-communication (WAIC)_ systems {{?WAIC}} are expected to significantly benefit from  determinist communications, given their higher criticality. For instance, flight control systems, integrating a large number of endpoints (sensors and actuators), require high reliability and bounded latency to assist in estimating and controlling the state of the aircraft. Real-time data needs to be delivered with strict deadlines for most control systems.
+Wireless integration is also relevant to industrial environments in the context of replacing cabling. Within the context of avionics {{AVIONICS}}, _Wireless Avionics Intra-communication (WAIC)_ systems {{WAIC}} are expected to significantly benefit from  determinist communications, given their higher criticality. For instance, flight control systems, integrating a large number of endpoints (sensors and actuators), require high reliability and bounded latency to assist in estimating and controlling the state of the aircraft. Real-time data needs to be delivered with strict deadlines for most control systems.
 
 The WAIC standardization process is still ongoing, without a clear indication about the frequencies that would be reserved for such systems, although the frequency band 4.2 GHz to 4.4 GHz is the one that currently seems most popular. Nevertheless, independently of the allocated frequency bands, the determinisc guarantees required by WAIC services may be achieved by means of the integration of functionality developed in current wireless standards.
 
@@ -481,15 +483,16 @@ However, the following requirements are expected to be supported by wireless tec
 
 
 In terms of potential KPIs, specific communication requirements can be identified:
-* Latency: 20-40ms {{?PARK2020}}.
-* Packet payload: small (e.g., 50 bytes) and variable bit rate {{?PARK2020}}.
-* Support between 125 to 4150 nodes {{?AVIONICS}}.
-* Maximum distance between transmitter and receiver: 15m {{?AVIONICS}}.
-* Aggregate average data rate of network (kbit/s): 394 to 18385 {{?AVIONICS}}.
-* Latency: below 5s for High data rate Inside (HI) applications {{?AVIONICS}}.
-* Jitter: below 50ms for HI applications {{?AVIONICS}}.
 
-As an example of current standards that may support the deterministic requirements of WAIC system, we can point to IEEE 802.11ax, which is being devised to operate between 1 and 7GHz (in addition to 2.4 GHz and 5GHz). The WAIC requirement for high reliability and bounded latency may be supported by 802.11ax capability of dividing the spectrum in frequency resource units (RUs), which are assigned to stations for reception and transmission by a central coordinating entity, the wireless Access Point. Reliability can be achieved by assigning more than one RU to the same station, for instance (an aspect that is not covered by IEEE 802.11ax but already under discussion for IEEE 802.11be). Through the central scheduling of the RUs contention overhead can be avoided, which increases efficiency in scenarios of dense deployments as is the case of WAIC applications. In this context, OFDMA and the concept of spatial reuse is relevant, to assist large-scale simultaneous transmission, while at the same time preventing collision and interference, and guaranteeing high throughput {{?AVIONICS1}}.
+* Latency: 20-40ms {{PARK2020}}.
+* Packet payload: small (e.g., 50 bytes) and variable bit rate {{PARK2020}}.
+* Support between 125 to 4150 nodes {{AVIONICS}}.
+* Maximum distance between transmitter and receiver: 15m {{AVIONICS}}.
+* Aggregate average data rate of network (kbit/s): 394 to 18385 {{AVIONICS}}.
+* Latency: below 5s for High data rate Inside (HI) applications {{AVIONICS}}.
+* Jitter: below 50ms for HI applications {{AVIONICS}}.
+
+As an example of current standards that may support the deterministic requirements of WAIC system, we can point to IEEE 802.11ax, which is being devised to operate between 1 and 7GHz (in addition to 2.4 GHz and 5GHz). The WAIC requirement for high reliability and bounded latency may be supported by 802.11ax capability of dividing the spectrum in frequency resource units (RUs), which are assigned to stations for reception and transmission by a central coordinating entity, the wireless Access Point. Reliability can be achieved by assigning more than one RU to the same station, for instance (an aspect that is not covered by IEEE 802.11ax but already under discussion for IEEE 802.11be). Through the central scheduling of the RUs contention overhead can be avoided, which increases efficiency in scenarios of dense deployments as is the case of WAIC applications. In this context, OFDMA and the concept of spatial reuse is relevant, to assist large-scale simultaneous transmission, while at the same time preventing collision and interference, and guaranteeing high throughput {{AVIONICS1}}.
 
 # Additional Reliable Wireless Industrial Services
 This section provides examples of additional wireless industrial services. We have specifically selected three different examples of such use-cases: i) remote AR/VR for maintenance and control; ii) decentralized shop-floor communication and iii) wireless cabin intra-communications. Based on these examples, wireless integration recommendations are debated and a list of specific requirements is provided.
@@ -516,99 +519,87 @@ In such applications, to ensure minimum interference, a few aspects need to be e
 * Between wireless devices (stations) and AP, there is the need to ensure that the AR/AV traffic is handled in a way that does not hinder critical traffic.
 * Low mobility SHOULD be supported.
 * Multiple user support SHOULD be provided.
-* VR sickness MUST be prevented {{?IEEERTA}}.
+* VR sickness MUST be prevented {{IEEERTA}}.
 * A tight integration of the AR/VR systems with production systems SHOULD be address in way compatible with the deterministic wired infrastructure. For instance, Audio Video Bridging (AVB) in the wired TSN infrastructure. Specifically, AVB is usually blocked by the time-aware shaper, and impacted by: TAS, CBS, FIFO and FPNS (fixed priority non-preemptive scheduling).
 * A software-based mechanism on the AP SHOULD support an adequate mapping of CoS to the wireless QoS (e.g., EDCA UPs).
 * MAC layer contention MUST be mitigated for all wireless stations within the area (within the range of the same AP or not).
 
 Specific communication requirements:
 
-		* Latency: 3-10ms {{?IEEERTA}}.
-		* Bandwidth, 0.1-2Gbps {{?IEEERTA}}.
-		* Data payload, over 4Kbytes {{?IEEERTA}}.
+* Latency: 3-10ms {{IEEERTA}}.
+* Bandwidth, 0.1-2Gbps {{IEEERTA}}.
+* Data payload, over 4Kbytes {{IEEERTA}}.
 
-		## Decentralized Shop-floor Communication Services
+## Decentralized Shop-floor Communication Services
 
-		### Description
-
-		The increasing automation of industrial environments implies an increase in the number of integrated nodes, including mobile nodes. Wireless is, for instance, a key driver for scenarios involving mobile vehicles {{?NICT}}. NICT also describes already production environments, in particular environments with elevated temperatures, where wireless communication is used to support safety of workers and to remotely monitor production status. Such environments comprise different applications (e.g., safety of workers, mobile robots, factory resource management) and debate on the interconnection of different wireless technologies and devices, from PLCs, to autonomous mobile robots, e.g., UAVs, AGVs. Wireless/wired integration mechanisms have also been debated in the cost of self-organizing production lines {{?DIETRICH2018}}. Therefore, the notion of flexible and heterogeneous shop-floor communication is already present in industrial environments, based on hybrid wired/wireless systems and the integration of multi-AP environments.
-
-
-		### Wireless Integration Recommendations
-
-		Prior related work debates on centralized communication architectures (infrastructure mode), and for this case, the issue of connectivity is usually circumvented via multiple AP coordination mechanisms. Within the context of multi-AP coordination and assuming TDMA-based communication, a well-organized schedule can prevent collisions {{?FERN2019}}. Hence, for this specific type of scenario, the main issue concerns handling handovers in a timely and precise way, capable of providing deterministic guarantees. However, with an increase on the number of nodes on a shop-floor, connectivity issues become more complex.
-
-		Therefore, it is relevant to explore also the possibility of a &quot;decentralized&quot; approach to shop-floor communication, considering both mobile and static nodes. In this case, and from a topology perspective, wireless industrial services are expected to be provided over both ad-hoc and infrastructure mode. Within the ad-hoc communication areas, there is control-based traffic integrated with sensing (critical, non-critical), with real-time traffic, as well as time-triggered traffic. Each node is responsible for managing its access to the medium, thus requiring a cooperative protocol approach.
-
-		### Requirements Considerations
-
-		In such environment, connectivity becomes more complex requiring additional support:
-
-		* A wider variety of traffic profiles MUST be supported, thus increasing the management complexity.
-		* Devices communicating via ad-hoc mode MUST integrate a collaborative communication approach, e.g., relaying, cluster-based scheduling approach.
-		* Low mobility MUST be supported (e.g., up to 2 m/s within a BSS).
-		* Multi-AP coordination MUST still be integrated.
-		* Frequent handover MUST be supported, ideally with a make-before-break approach.
-		* Neighbor detection and coverage problem detection MUST be implemented in ad-hoc nodes.
-
-		Specific communication requirements:
-		*	Latency: 20-40ms {{?error1}}.
-		*	Packet payload: small (e.g., 50 bytes) and variable bit rate {{?error1}}.
+### Description
+The increasing automation of industrial environments implies an increase in the number of integrated nodes, including mobile nodes. Wireless is, for instance, a key driver for scenarios involving mobile vehicles {{NICT}}. NICT also describes already production environments, in particular environments with elevated temperatures, where wireless communication is used to support safety of workers and to remotely monitor production status. Such environments comprise different applications (e.g., safety of workers, mobile robots, factory resource management) and debate on the interconnection of different wireless technologies and devices, from PLCs, to autonomous mobile robots, e.g., UAVs, AGVs. Wireless/wired integration mechanisms have also been debated in the cost of self-organizing production lines {{DIETRICH2018}}. Therefore, the notion of flexible and heterogeneous shop-floor communication is already present in industrial environments, based on hybrid wired/wireless systems and the integration of multi-AP environments.
 
 
+### Wireless Integration Recommendations
 
+Prior related work debates on centralized communication architectures (infrastructure mode), and for this case, the issue of connectivity is usually circumvented via multiple AP coordination mechanisms. Within the context of multi-AP coordination and assuming TDMA-based communication, a well-organized schedule can prevent collisions {{FERN2019}}. Hence, for this specific type of scenario, the main issue concerns handling handovers in a timely and precise way, capable of providing deterministic guarantees. However, with an increase on the number of nodes on a shop-floor, connectivity issues become more complex.
 
-		## Autonomous Airborne Services
+Therefore, it is relevant to explore also the possibility of a &quot;decentralized&quot; approach to shop-floor communication, considering both mobile and static nodes. In this case, and from a topology perspective, wireless industrial services are expected to be provided over both ad-hoc and infrastructure mode. Within the ad-hoc communication areas, there is control-based traffic integrated with sensing (critical, non-critical), with real-time traffic, as well as time-triggered traffic. Each node is responsible for managing its access to the medium, thus requiring a cooperative protocol approach.
 
-		    
-		### Description
+### Requirements Considerations
+In such environment, connectivity becomes more complex requiring additional support:
 
-		Over the last decade several services emerged that rely on the autonomous (total or partial) operation of airborne systems. Examples of such systems are: logistic drones; swarm of drones (e.g. for surveillance); urban Air Mobility {{?UAM18}}; single Pilot operation of commercial aircrafts {{?BBN8436}}. 
+* A wider variety of traffic profiles MUST be supported, thus increasing the management complexity.
+* Devices communicating via ad-hoc mode MUST integrate a collaborative communication approach, e.g., relaying, cluster-based scheduling approach.
+* Low mobility MUST be supported (e.g., up to 2 m/s within a BSS).
+* Multi-AP coordination MUST still be integrated.
+* Frequent handover MUST be supported, ideally with a make-before-break approach.
+* Neighbor detection and coverage problem detection MUST be implemented in ad-hoc nodes.
 
-		Such autonomous airborne systems rely on advances in communications, navigation, and air traffic management to mitigate the significant workload of  autonomous operations, namely by means of air-ground collaborative decision making. Such decision making processes rely on expanding the role of ground operators, including tactical (re-routing) and emergency flight phases, as well as higher levels of decision support including systems monitoring in real-time.
+Specific communication requirements:
+* Latency: 20-40ms {{ROBOTS1}}.
+* Packet payload: small (e.g., 50 bytes) and variable bit rate {{ROBOTS1}}.
 
-		Such air-ground collaborative decision making process can only be possible with the support of a reliable wireless network able to assist in the required data exchange (of different types of traffic) within significant constraints in terms of delay and error avoidance.
+## Autonomous Airborne Services
+### Description
 
-		### Wireless Integration Recommendations
+Over the last decade several services emerged that rely on the autonomous (total or partial) operation of airborne systems. Examples of such systems are: logistic drones; swarm of drones (e.g. for surveillance); urban Air Mobility {{UAM18}}; single Pilot operation of commercial aircrafts {{BBN8436}}. 
 
-		Independently of the type of application (logistics, surveillance, urban air mobility, single pilot operation), an autonomous airborne system can be models as a multi-agent system, in which agents need to use a wireless network to communicate reliably between them and in possible with a control entity. The nature and position of such agentes differ from application to application. For instance, all agents may be collocated in the same or different flying vehicles.
+Such autonomous airborne systems rely on advances in communications, navigation, and air traffic management to mitigate the significant workload of  autonomous operations, namely by means of air-ground collaborative decision making. Such decision making processes rely on expanding the role of ground operators, including tactical (re-routing) and emergency flight phases, as well as higher levels of decision support including systems monitoring in real-time.
 
-		A high-performance and reliable wireless network has an important role in meeting the challenges of autonomous airborne systems, such as coordination and collaboration strategies, control mechanisms, and mission planning algorithms. Hence, wireless technologies plan a central role in the creation of the needed networking system, including air-to-air communications (single or multi-hop) but air-to-ground communications.
+Such air-ground collaborative decision making process can only be possible with the support of a reliable wireless network able to assist in the required data exchange (of different types of traffic) within significant constraints in terms of delay and error avoidance.
 
-		Air-to-air communications allow all airborne agents to establish efficient communication, allowing the reception of error prune data exchanged within the required time frames. For instance, in a swarm drones can either communicate with each other directly, or indirectly by constructing multi-hop communication paths with other drones.
+### Wireless Integration Recommendations
 
-		In what concerns air-to-ground communications, airborne agents communicate with a control center, such as a ground station, to obtain real-time updated information (e.g. mission related). Air-to-ground communication is usually direct communication.
+Independently of the type of application (logistics, surveillance, urban air mobility, single pilot operation), an autonomous airborne system can be models as a multi-agent system, in which agents need to use a wireless network to communicate reliably between them and in possible with a control entity. The nature and position of such agentes differ from application to application. For instance, all agents may be collocated in the same or different flying vehicles.
 
-		The air-to-air and air-to-ground communications are combined through a communication architecture, which can be of different types. In small autonomous systems (single drones used for logistics), a central control station is deployed with enough powerf to communicate with the drone. In autonomous systems with a large number of agents, a decentralized approach should be used.
+A high-performance and reliable wireless network has an important role in meeting the challenges of autonomous airborne systems, such as coordination and collaboration strategies, control mechanisms, and mission planning algorithms. Hence, wireless technologies plan a central role in the creation of the needed networking system, including air-to-air communications (single or multi-hop) but air-to-ground communications.
 
-		### Requirements Considerations
+Air-to-air communications allow all airborne agents to establish efficient communication, allowing the reception of error prune data exchanged within the required time frames. For instance, in a swarm drones can either communicate with each other directly, or indirectly by constructing multi-hop communication paths with other drones.
 
-		When analysing the major properties of wireless communication architectures, the first priority should go to requirements of high coverage and maintaining connectivity. The former plays an important role in gathering the information needed for the operation of the autonomous system, while maintaining connectivity ensures the real-time communication within the system. 
+In what concerns air-to-ground communications, airborne agents communicate with a control center, such as a ground station, to obtain real-time updated information (e.g. mission related). Air-to-ground communication is usually direct communication.
 
-		However, autonomous systems may operate in unknown environments, with the unpredicted appearance of threats and obstacles in time and space. Hence such systems should rely on wireless technology that has a high level of reliability and availability. For instance, wireless technology that is able to keep two neighbour agents connected, even when their direct link drops below the required minimum signal-to-noise ratio (SNR) or receive signal strength indicators (RSSI) range. On a system level, wireless network technologies, such as routing, should be able to react cognitively to changes of the environment to adapt the communication system in order to ensure the needed coverage and connectivity levels.
+The air-to-air and air-to-ground communications are combined through a communication architecture, which can be of different types. In small autonomous systems (single drones used for logistics), a central control station is deployed with enough powerf to communicate with the drone. In autonomous systems with a large number of agents, a decentralized approach should be used.
 
-		In this sense it is required the investigation of routing protocols able to ensure the desirable level or reliability and availability of complete system. This means that the wireless routing function should fulfill a set of requirements, including:
-		* Suitable for dynamic topologies.
-		* Scalable with the number of networked agents.
-		* Ensure low values of packet delays (KPI depends upon the specific application).
-		* Ensure high values of packet delivery (KPI depends upon the specific application).
-		* Ensure fast recovery in the presence of interrupted communications.
-		* Ensure low cost in terms of the utilization of network resources (e.g. network queues, transmission opportunities).
-		* Ensure high robustness to link failure.
+### Requirements Considerations
 
-		# Security Considerations
+When analysing the major properties of wireless communication architectures, the first priority should go to requirements of high coverage and maintaining connectivity. The former plays an important role in gathering the information needed for the operation of the autonomous system, while maintaining connectivity ensures the real-time communication within the system. 
 
-		This document describes industrial application communication requirements for the integration of reliable Wi-Fi technologies. The different applications have security considerations which have been described in the respective sources {{?IEEERTA}}, {{?NICT}}, {{?IIC}}, {{?AVNU2020}}, {{?5GACIA}}.
+However, autonomous systems may operate in unknown environments, with the unpredicted appearance of threats and obstacles in time and space. Hence such systems should rely on wireless technology that has a high level of reliability and availability. For instance, wireless technology that is able to keep two neighbour agents connected, even when their direct link drops below the required minimum signal-to-noise ratio (SNR) or receive signal strength indicators (RSSI) range. On a system level, wireless network technologies, such as routing, should be able to react cognitively to changes of the environment to adapt the communication system in order to ensure the needed coverage and connectivity levels.
 
-		# IANA Considerations
+In this sense it is required the investigation of routing protocols able to ensure the desirable level or reliability and availability of complete system. This means that the wireless routing function should fulfill a set of requirements, including:
+* Suitable for dynamic topologies.
+* Scalable with the number of networked agents.
+* Ensure low values of packet delays (KPI depends upon the specific application).
+* Ensure high values of packet delivery (KPI depends upon the specific application).
+* Ensure fast recovery in the presence of interrupted communications.
+* Ensure low cost in terms of the utilization of network resources (e.g. network queues, transmission opportunities).
+* Ensure high robustness to link failure.
 
-		This document has no IANA actions.
+# Security Considerations
 
-		# Acknowledgments
+This document describes industrial application communication requirements for the integration of reliable Wi-Fi technologies. The different applications have security considerations which have been described in the respective sources {{IEEERTA}}, {{NICT}}, {{IIC}}, {{AVNU2020}}, {{5GACIA}}.
 
-The research leading to these results received funding from joint fortiss GmbH and Huawei project TSNWiFi ({{?https://www.fortiss.org/en/research/projects/detail/tsnwifi}}(https://www.fortiss.org/en/research/projects/detail/tsnwifi))
+# IANA Considerations
 
+This document has no IANA actions.
 
-
-
+# Acknowledgments
+The research leading to these results received funding from joint fortiss GmbH and Huawei project TSNWiFi ({{https://www.fortiss.org/en/research/projects/detail/tsnwifi}}(https://www.fortiss.org/en/research/projects/detail/tsnwifi))
 
