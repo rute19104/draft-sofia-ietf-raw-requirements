@@ -169,18 +169,6 @@ informative:
 --- abstract
 This document provides an overview on communication requirements for handling reliable wireless services within the context of industrial environments. The goal of the draft is to bring awareness to communication requirements of current and future wireless industrial services; how can they co-exist with wired infrastructures; key drivers for reliable wireless integration; relevant communication requirements to take into consideration; current and future challenges derived from the use of wireless.
 
-Status of this Memo
-This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.
-Internet-Drafts are working documents of the Internet Engineering Task Force (IETF), its areas, and its working groups.  Note that other groups may also distribute working documents as Internet-Drafts.
-Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."
-The list of current Internet-Drafts can be accessed at http://www.ietf.org/ietf/1id-abstracts.txt
-The list of Internet-Draft Shadow Directories can be accessed at http://www.ietf.org/shadow.html
-This Internet-Draft will expire on August 2nd 2021.
-
-Copyright Notice
-Copyright (c) 2020 IETF Trust and the persons identified as the document authors. All rights reserved.
-This document is subject to BCP 78 and the IETF Trust’s Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document. Please review these documents carefully, as they describe your rights and restrictions with respect to this document. Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.
-
 --- middle
 #Introduction
 Within industrial environments, short-range wireless standards, such as IEEE 802.11ax, are gaining prominence as there exists an increasing need for flexibility in terms of infrastructure layout, of processes support.
