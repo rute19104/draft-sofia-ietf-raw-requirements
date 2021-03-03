@@ -1,43 +1,44 @@
 ---
-title: Requirements for Reliable Wireless Industrial Services 
+title: Requirements for Reliable Wireless Industrial Services
 docname: draft-sofia-raw-industrialreq-latest
 date: 2020-03-06
 ipr: trust200902
 area: Routing
 wg: Reliable and Available Wireless Working Group
 kw: Internet-Draft
+cat: info
 pi:
   toc: yes
   sortrefs: yes
 
 author:
-  - 
-   ins: R. C. Sofia 
+  -
+   ins: R. C. Sofia
    name: Rute C. Sofia
    org: fortiss GmbH
    street: Guerickestr. 25
-   city: Munich 
+   city: Munich
    code: 80805
    country: Germany
    email: sofia@fortiss.org
-  -       
+  -
    ins: M. Kovatsch
    name: Matthias Kovatsch
-   org: Huawei Technologies 
+   org: Huawei Technologies
    street: Riesstr. 25 C, 3.0G
-   city: Munich 
+   city: Munich
    code: 80992
    country: Germany
-   email: ietf@kovatsch.net 
-  - 
+   email: ietf@kovatsch.net
+  -
    ins: P. Mendes
    name: Paulo Milheiro Mendes
    org: Airbus
    street: Willy-Messerschmitt Strasse 1
-   city: Munich 
+   city: Munich
    code: 81663
    country: Germany
-   email: paulo.mendes@airbus.com 
+   email: paulo.mendes@airbus.com
 
 normative:
   RFC2119:
@@ -67,7 +68,7 @@ informative:
     date: 2020
 
   ROBOTS1:
-   title: Flexible Wi-Fi Communication among Mobile Robots in Indoor Industrial Environments, Mob. Inf. Syst. 
+   title: Flexible Wi-Fi Communication among Mobile Robots in Indoor Industrial Environments, Mob. Inf. Syst.
    author:
       ins: J. Haxhibeqiri, E. A. Jarchlo, I. Moerman, and J. Hoebeke
       name: J. Haxhibeqiri, E. A. Jarchlo, I. Moerman, and J. Hoebeke
@@ -76,7 +77,7 @@ informative:
   WAIC:
    title: Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58,
    author:
-      ins: 
+      ins:
       name:
       org: International Telecommunication Union
    date: 2010.
@@ -93,8 +94,8 @@ informative:
    title: 5G for Connected Industries and Automation
    author:
      ins: 5G ACIA
-     name: 5G ACIA 
-   date: November 2019 
+     name: 5G ACIA
+   date: November 2019
 
   NICT:
    title: Wireless use cases and communication requirements in factories ( abridged edition ), Flex. Factories Proj
@@ -111,24 +112,24 @@ informative:
     name: IEB
    date: 2018
 
-  IEEERTA: 
+  IEEERTA:
    title: IEEE 802.11 Real Time Applications TIG Report
    author:
     ins: K. Meng
     name: K. Meng
    date: 2018
 
-  IETFRAW-USECASES: 
+  IETFRAW-USECASES:
    target: https://datatracker.ietf.org/doc/draft-ietf-raw-use-cases/
    title: RAW use cases,” IETF draft - RAW working group
-   author: 
+   author:
     ins:
     name: G. Papadopoulos, P. Thubert, F. Theoleyre, and C. Bernardos
    date: 2020
 
-  OPCFLC: 
+  OPCFLC:
    target: https://opcfoundation.org/flc/
-   title: OPC Foundation Field Level Communications (FLC) Initiative 
+   title: OPC Foundation Field Level Communications (FLC) Initiative
    author:
     ins:
     name:
@@ -140,12 +141,12 @@ informative:
     ins: Dietrich, S., May, G., von Hoyningen-Huene, J., Mueller, A., & Fohler, G.
     name: Dietrich, S., May, G., von Hoyningen-Huene, J., Mueller, A., & Fohler, G.
    date: 2018
-  
+
   FERN2019:
    title: Analysis of the Impact of Wireless Mobile Devices in Critical Industrial Applications
    author:
     ins: Z. Fernández Ganzabal
-    name: Z. Fernández Ganzabal 
+    name: Z. Fernández Ganzabal
    date: May, 2019
 
   PARK2020:
@@ -156,7 +157,7 @@ informative:
    date: 2020
 
   ITU2010:
-   title: International Telecommunication Union, Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58 
+   title: International Telecommunication Union, Technical characteristics and operational objectives for wireless avionics intra-communications, Policy, vol. 2197, p. 58
    date: 2010.
 
   BBN8436:
@@ -180,7 +181,7 @@ informative:
 This document provides an overview on communication requirements for handling reliable wireless services within the context of industrial environments. The goal of the draft is to bring awareness to communication requirements of current and future wireless industrial services; how can they co-exist with wired infrastructures; key drivers for reliable wireless integration; relevant communication requirements to take into consideration; current and future challenges derived from the use of wireless.
 
 Status of this Memo
-This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79. 
+This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.
 Internet-Drafts are working documents of the Internet Engineering Task Force (IETF), its areas, and its working groups.  Note that other groups may also distribute working documents as Internet-Drafts.
 Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."
 The list of current Internet-Drafts can be accessed at http://www.ietf.org/ietf/1id-abstracts.txt
@@ -199,7 +200,7 @@ There are, nonetheless, barriers to the integration of wireless in industrial en
 Still, being able to address the communication challenges that exist in industrial domains require a better understanding of communication requirements that the existing and future industrial applications may attain. Hence, the focus of this draft is on discussing industrial application requirements, currently and for the future and how to best support time-sensitive applications and services within industrial converged networks. For that purpose, the draft debates on wireless industrial services collected from related normative and informational references on the industrial domain; debates on key drivers for the integration of wireless; debates on specific wireless mechanisms that may assist such integration and challenges thereof; and elaborates on specific requirements to observe both for current wireless services as well as for a subset of future industrial wireless services.
 
 #Conventions used in this document
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 {{RFC2119}}. 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 {{RFC2119}}.
 In this document, these words will appear with that interpretation   only when in ALL CAPS. Lower case uses of these words are not to be    interpreted as carrying significance described in RFC 2119.
 
 # Conventions used in this document
@@ -211,9 +212,9 @@ In this document, these words will appear with that interpretation only when in 
 
 # Definitions
 
-* Latency (aka bounded latency), concerns the end-to-end transmission delay between a transmitter and a receiver, when a traffic flow is triggered by an application. By definition, latency corresponds to the time interval between sending the first packet of a flow from a source to a destination, until the instant of reception of the last packet of that flow. 
+* Latency (aka bounded latency), concerns the end-to-end transmission delay between a transmitter and a receiver, when a traffic flow is triggered by an application. By definition, latency corresponds to the time interval between sending the first packet of a flow from a source to a destination, until the instant of reception of the last packet of that flow.
 
-* Periodicity stands for whether or not the data transmission is executed in a periodic fashion and whenever possible, the specific periodicity per unit of time has been specified. 
+* Periodicity stands for whether or not the data transmission is executed in a periodic fashion and whenever possible, the specific periodicity per unit of time has been specified.
 
 * "Transmit data size” corresponds to the data payload in bytes.
 
@@ -350,7 +351,7 @@ Examples of applications in this category, and their communication requirements 
 
 
 ## Factory Resource Management Services
-Refers to capturing information about whether production is proceeding under proper environmental conditions, and whether staff and devices contributing to productivity enhancement are being managed appropriately. Reasons for wireless integration concern: flexibility of deployment, reconfigurability, maintenance cost reduction. 
+Refers to capturing information about whether production is proceeding under proper environmental conditions, and whether staff and devices contributing to productivity enhancement are being managed appropriately. Reasons for wireless integration concern: flexibility of deployment, reconfigurability, maintenance cost reduction.
 
 Services debated in this context are:
 
@@ -369,7 +370,7 @@ Services debated in this context are:
 * Positioning, motion analysis
   * Bounded latency: 50ms-10s.
   * Periodic, once per second.
-  
+
 * Inventory control
   * Bounded latency: 50ms-10s.
   * Periodic, once per second.
@@ -393,7 +394,7 @@ Examples of services are:
   * Transmit data size (bytes): 10-6K.
   * Tolerance to packet loss: yes.
   * Node density: 1-30
-  
+
 * Display information
   * Bounded latency: 10s.
   * Sporadic, once per hour.
@@ -493,7 +494,7 @@ As an example of current standards that may support the deterministic requiremen
 
 # Additional Reliable Wireless Industrial Services
 This section provides examples of additional wireless industrial services. We have specifically selected three different examples of such use-cases: i) remote AR/VR for maintenance and control; ii) decentralized shop-floor communication and iii) wireless cabin intra-communications. Based on these examples, wireless integration recommendations are debated and a list of specific requirements is provided.
-  
+
 ## AR/VR Services within Flexible Factories
 
 ### Description
@@ -556,7 +557,7 @@ Specific communication requirements:
 ## Autonomous Airborne Services
 ### Description
 
-Over the last decade several services emerged that rely on the autonomous (total or partial) operation of airborne systems. Examples of such systems are: logistic drones; swarm of drones (e.g. for surveillance); urban Air Mobility {{UAM18}}; single Pilot operation of commercial aircrafts {{BBN8436}}. 
+Over the last decade several services emerged that rely on the autonomous (total or partial) operation of airborne systems. Examples of such systems are: logistic drones; swarm of drones (e.g. for surveillance); urban Air Mobility {{UAM18}}; single Pilot operation of commercial aircrafts {{BBN8436}}.
 
 Such autonomous airborne systems rely on advances in communications, navigation, and air traffic management to mitigate the significant workload of  autonomous operations, namely by means of air-ground collaborative decision making. Such decision making processes rely on expanding the role of ground operators, including tactical (re-routing) and emergency flight phases, as well as higher levels of decision support including systems monitoring in real-time.
 
@@ -576,7 +577,7 @@ The air-to-air and air-to-ground communications are combined through a communica
 
 ### Requirements Considerations
 
-When analysing the major properties of wireless communication architectures, the first priority should go to requirements of high coverage and maintaining connectivity. The former plays an important role in gathering the information needed for the operation of the autonomous system, while maintaining connectivity ensures the real-time communication within the system. 
+When analysing the major properties of wireless communication architectures, the first priority should go to requirements of high coverage and maintaining connectivity. The former plays an important role in gathering the information needed for the operation of the autonomous system, while maintaining connectivity ensures the real-time communication within the system.
 
 However, autonomous systems may operate in unknown environments, with the unpredicted appearance of threats and obstacles in time and space. Hence such systems should rely on wireless technology that has a high level of reliability and availability. For instance, wireless technology that is able to keep two neighbour agents connected, even when their direct link drops below the required minimum signal-to-noise ratio (SNR) or receive signal strength indicators (RSSI) range. On a system level, wireless network technologies, such as routing, should be able to react cognitively to changes of the environment to adapt the communication system in order to ensure the needed coverage and connectivity levels.
 
