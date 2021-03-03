@@ -6,8 +6,10 @@ ipr: trust200902
 area: Routing
 wg: Reliable and Available Wireless Working Group
 kw: Internet-Draft
-#toc: yes
-#sortrefs: yes
+pi:
+  toc: yes
+  sortrefs: yes
+
 author:
   - 
    ins: R. C. Sofia 
@@ -38,12 +40,7 @@ author:
    email: paulo.mendes@airbus.com 
 
 normative:
-#        - rfc2119
-#        - rfc2616
-#        - I-D.ietf-core-coap
   RFC2119:
-  RFC2616:
-  I-D.ietf-core-coap:
 
 informative:
   NENDICA:
@@ -92,7 +89,7 @@ informative:
       org: Avnu Alliance
    date: 2020
 
-  5GACIA:
+  ACIA:
    title: 5G for Connected Industries and Automation
    author:
      ins: 5G ACIA
@@ -129,7 +126,7 @@ informative:
     name: G. Papadopoulos, P. Thubert, F. Theoleyre, and C. Bernardos
    date: 2020
 
-  OPC FLC: 
+  OPCFLC: 
    target: https://opcfoundation.org/flc/
    title: OPC Foundation Field Level Communications (FLC) Initiative 
    author:
@@ -230,14 +227,14 @@ In this document, these words will appear with that interpretation only when in 
 
 This section describes industrial applications where IEEE 802.11 is already being applied, derived from an analysis of related work.
 
-Industrial wireless services focused on the strengthening of industrial manufacturing environments have been intensively documented via the IEEE Nendica group {{NENDICA}}, the Internet Industrial Consortium {{IIC}}, the OPC FLC working group {{OPC FLC}}.
+Industrial wireless services focused on the strengthening of industrial manufacturing environments have been intensively documented via the IEEE Nendica group {{NENDICA}}, the Internet Industrial Consortium {{IIC}}, the OPC FLC working group {{OPCFLC}}.
 The IEEE Nendica 2020 report {{NENDICA}} comprises several end-to-end use-cases and a technical analysis of the identified features and functions supported via wireless/wired deterministic environments. Based on surveys to industry, the report provides a first characterization of wireless services in factories (Wi-Fi 5), characterizing the scenarios in terms of aspects such as as payload size in bytes, communication rate, arrival time tolerance, node density.
 
 The IEEE 802.11 RTA report {{IEEERTA}} provides additional input concerning the support of wireless for time-sensitive and real-time applications. For each category of application, the report provides a description, basic information concerning topology and packet flow/traffic model, summarizing the problem statement (main challenges). The industrial applications in this report are a subset and have also considered sources such as IEEE Nendica, IEC/IEEE 60802 Use-cases, as well as 3GPP TR 22.804. The report aggregates the different services in 3 classes (A,B,C) and provides communication requirements for each class categorized as: bounded latency (worst-case one-way latency measured at the application layer); reliability (defined as the percentage of packets expected to be received within the latency bound); time synchronization needs (in the order of micro/milliseconds); throughput needs (high, moderate, low). The report concludes with guidelines concerning implementation aspects, e.g., traffic classification aspects and new capabilities to support real-time applications.
 
 The Avnu Alliance provides a white paper describing steps for the integration of TSN over WiFi {{AVNU2020}}, briefly describing the integration of Wi-Fi in specific applications such as: closed loop control, mobile robots, power grid control, professional Audio/Video, gaming, AR/VR. The document also raises awareness to the possibility of wireless replacing or being complementary to wired within connected cabines, i.e., in regards to the wiring harness within vehicles (cars, airplanes, trains), which are currently expensive and which require a complex onboarding. Wireless can assist in lowering the costs, if it can be adapted to the critical latency, safety requirements and regulations. Such cases would require 100 micosecond level cycles, according to Avnu. The communication requirements are summarised in terms of whether or not IEEE 1588 synchronisation is required; the typical packet size (data payload); bounded latency; reliability.
 
-Manufacturing wireless use-cases have also been debated in the context of 5G ACIA {{5GACIA}}, NICT {{NICT}}, and IETF Deterministic Networking {{RFC8578}}. These sources provide an overview on user stories, and debate on the challenges brought by the integration of wireless. However, communication requirements are not presented in a systematic way. Lastly, the IETF RAW working group has an active draft which provides an initial overview on the challenges of wireless industrial use-cases {{IETFRAW-USECASES}}.
+Manufacturing wireless use-cases have also been debated in the context of 5G ACIA {{ACIA}}, NICT {{NICT}}, and IETF Deterministic Networking {{RFC8578}}. These sources provide an overview on user stories, and debate on the challenges brought by the integration of wireless. However, communication requirements are not presented in a systematic way. Lastly, the IETF RAW working group has an active draft which provides an initial overview on the challenges of wireless industrial use-cases {{IETFRAW-USECASES}}.
 
 Derived from the analysis of the aforementioned sources, this section provides a description of categories of applications, and respective communication requirements. The following categories of applications are addressed:
 
@@ -351,8 +348,8 @@ Examples of applications in this category, and their communication requirements 
   * Tolerance to packet loss: 0.
   * Node density: 1-10 (per 20mx20m).
 
-  ## Factory Resource Management Services
 
+## Factory Resource Management Services
 Refers to capturing information about whether production is proceeding under proper environmental conditions, and whether staff and devices contributing to productivity enhancement are being managed appropriately. Reasons for wireless integration concern: flexibility of deployment, reconfigurability, maintenance cost reduction. 
 
 Services debated in this context are:
@@ -492,7 +489,7 @@ In terms of potential KPIs, specific communication requirements can be identifie
 * Latency: below 5s for High data rate Inside (HI) applications {{AVIONICS}}.
 * Jitter: below 50ms for HI applications {{AVIONICS}}.
 
-As an example of current standards that may support the deterministic requirements of WAIC system, we can point to IEEE 802.11ax, which is being devised to operate between 1 and 7GHz (in addition to 2.4 GHz and 5GHz). The WAIC requirement for high reliability and bounded latency may be supported by 802.11ax capability of dividing the spectrum in frequency resource units (RUs), which are assigned to stations for reception and transmission by a central coordinating entity, the wireless Access Point. Reliability can be achieved by assigning more than one RU to the same station, for instance (an aspect that is not covered by IEEE 802.11ax but already under discussion for IEEE 802.11be). Through the central scheduling of the RUs contention overhead can be avoided, which increases efficiency in scenarios of dense deployments as is the case of WAIC applications. In this context, OFDMA and the concept of spatial reuse is relevant, to assist large-scale simultaneous transmission, while at the same time preventing collision and interference, and guaranteeing high throughput {{AVIONICS1}}.
+As an example of current standards that may support the deterministic requirements of WAIC system, we can point to IEEE 802.11ax, which is being devised to operate between 1 and 7GHz (in addition to 2.4 GHz and 5GHz). The WAIC requirement for high reliability and bounded latency may be supported by 802.11ax capability of dividing the spectrum in frequency resource units (RUs), which are assigned to stations for reception and transmission by a central coordinating entity, the wireless Access Point. Reliability can be achieved by assigning more than one RU to the same station, for instance (an aspect that is not covered by IEEE 802.11ax but already under discussion for IEEE 802.11be). Through the central scheduling of the RUs contention overhead can be avoided, which increases efficiency in scenarios of dense deployments as is the case of WAIC applications. In this context, OFDMA and the concept of spatial reuse is relevant, to assist large-scale simultaneous transmission, while at the same time preventing collision and interference, and guaranteeing high throughput {{ROBOTS1}}.
 
 # Additional Reliable Wireless Industrial Services
 This section provides examples of additional wireless industrial services. We have specifically selected three different examples of such use-cases: i) remote AR/VR for maintenance and control; ii) decentralized shop-floor communication and iii) wireless cabin intra-communications. Based on these examples, wireless integration recommendations are debated and a list of specific requirements is provided.
@@ -594,7 +591,7 @@ In this sense it is required the investigation of routing protocols able to ensu
 
 # Security Considerations
 
-This document describes industrial application communication requirements for the integration of reliable Wi-Fi technologies. The different applications have security considerations which have been described in the respective sources {{IEEERTA}}, {{NICT}}, {{IIC}}, {{AVNU2020}}, {{5GACIA}}.
+This document describes industrial application communication requirements for the integration of reliable Wi-Fi technologies. The different applications have security considerations which have been described in the respective sources {{IEEERTA}}, {{NICT}}, {{IIC}}, {{AVNU2020}}, {{ACIA}}.
 
 # IANA Considerations
 
