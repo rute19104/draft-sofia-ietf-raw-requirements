@@ -1035,7 +1035,7 @@ Table of Contents
 
    [AVIONICS] Fischione, P.Park, P.Di Marco, J.Nah, and C., "Wireless
               Avionics Intra-Communications, A Survey of Benefits,
-              Challenges, and Solutions, pp. 1–24", 2020.
+              Challenges, and Solutions, pp. 1-24", 2020.
 
    [AVNU2020] Bush, S., "Avnu Alliance White Paper Wireless TSN-
               Definitions, Use Cases & Standards Roadmap", 2020.
@@ -1062,7 +1062,7 @@ Table of Contents
               2018.
 
    [IETFRAW-USECASES]
-              Bernardos, G.P.P.T.F.T.a.C., "RAW use cases,” IETF draft -
+              Bernardos, G.P.P.T.F.T.a.C., "RAW use cases," IETF draft -
               RAW working group", 2020,
               <https://datatracker.ietf.org/doc/draft-ietf-raw-use-
               cases/>.
