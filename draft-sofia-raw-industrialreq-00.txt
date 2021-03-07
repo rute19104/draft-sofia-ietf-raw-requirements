@@ -5,10 +5,10 @@
 Reliable and Available Wireless Working Group                 R.C. Sofia
 Internet-Draft                                              fortiss GmbH
 Intended status: Informational                               M. Kovatsch
-Expires: 4 September 2021                            Huawei Technologies
+Expires: 8 September 2021                            Huawei Technologies
                                                                P. Mendes
                                                                   Airbus
-                                                            3 March 2021
+                                                            7 March 2021
 
 
          Requirements for Reliable Wireless Industrial Services
